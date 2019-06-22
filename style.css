@@ -1,7 +1,12 @@
-.background_img {
-	width: 100%;
-	height: auto;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.body {
-	
+.row{
+	margin: 0 auto;
+}
+.background_img {
+	max-width: 100%;
+	height: auto;
 }
