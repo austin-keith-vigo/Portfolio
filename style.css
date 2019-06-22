@@ -6,7 +6,9 @@
 .row{
 	margin: 0 auto;
 }
-.background_img {
-	max-width: 100%;
-	height: auto;
+header {
+	background-image: url(background_img.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
 }
