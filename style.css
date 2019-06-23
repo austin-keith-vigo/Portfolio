@@ -48,20 +48,30 @@ header{
     text-decoration: none;
     color: #000;
 }
-
-.reference-icons {
+.reference-icons-box{
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-bottom-style: solid;
 	border-bottom-color: #000;
-	border-bottom-width: 3px;
-	text-align: center
+	border-bottom-width: 2px;
 }
-.reference-icons li {
-	display: inline;
+.reference-icons{
+	text-align: center;
+}
+.reference-icons li{
+	display:inline;
+}
+.reference-icons a{
+	display:inline-block;
+	padding:5px;
+}
+
+#linkedin-icon {
 
 }
-.linkedin-icon {
-	height: 30px;
-	width: 30px;
+
+#resume-icon {
+
 }
 
 /*--------------------------------------------------*/
@@ -70,6 +80,8 @@ header{
 body{
 	background-image: url(Grey_Gradient.jpg);
 	background-size: cover;
+	font-family: 'Righteous', cursive;
+	padding: 30px;
 }
 
 /*--------------------------------------------------*/
@@ -77,6 +89,10 @@ body{
 /*--------------------------------------------------*/
 footer{
 	font-family: 'Righteous', cursive;
+}
+#about-me-title {
+	font-size: 18px;
+	text-align: left;
 }
 .works-cited{
 }
