@@ -1,14 +1,44 @@
+/*--------------------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------------------*/
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	font-size: 20px;
+	color: #fff;
+}
+
+/*--------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*--------------------------------------------------*/
 .row{
 	margin: 0 auto;
 }
+
+/*--------------------------------------------------*/
+/* HEADER */
+/*--------------------------------------------------*/
 header {
-	background-image: url(background_img.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(background_img.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+}
+.nav-bar {
+	margin: 10px 10px;
+	float: right;
+}
+
+.nav-bar li{
+	list-style: none;
+	display: inline-block;
+	border-color: white;
+}
+.nav-bar li a{
+	text-decoration: none;
+	color: #fff;
+	margin: 0 5px;
 }
