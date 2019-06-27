@@ -18,132 +18,13 @@ html {
 	margin: 0 auto;
 	position: relative;
 }
+
 /*--------------------------------------------------*/
 /* HEADER */
 /*--------------------------------------------------*/
 header{
-	font-family: 'Righteous', cursive;
+    background-color: darkorange;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
-
-.title-box {
-	margin-top: 20px;
-	text-align: center;
-	color: #000;
-	font-size: 300%;
-}
-.nav-bar{
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-
-}
-.nav-bar li{
-    display:inline;
-
-}
-.nav-bar a{
-    display:inline-block;
-    padding:10px;
-    text-decoration: none;
-    color: #000;
-}
-
-.reference-icons-box{
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-.reference-icons{
-	text-align: center;
-}
-.reference-icons li{
-	display:inline;
-}
-.reference-icons a{
-	display:inline-block;
-	padding:5px;
-}
-
-#linkedin-icon {
-
-}
-
-#resume-icon {
-
-}
-
-/*--------------------------------------------------*/
-/* BODY */
-/*--------------------------------------------------*/
-body{
-	background-image: url(Grey_Gradient.jpg);
-	background-size: cover;
-	font-family: 'Righteous', cursive;
-	padding: 30px;
-	
-}
-h1{
-	font-size:25px;
-	text-align: center;
-}
-
-.highlight-card{
-	height: 225px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #000;
-}
-
-#about-me-section{
-	margin: 15px 0;
-}
-
-#highlights-section{
-	margin: 15px 0;
-}
-
-.highlights-box{
-	position: relative;
-	height: auto;
-}
-
-.jump-to-button{
-	position: absolute;
-	bottom:0;
-	color: #000;
-	border-width: 3px;
-	border-color: #000;
-	border-style: solid;
-
-
-}
-
-.jump-to-button#left{
-	left: 25%;
-  	margin-left: -25px;
-}
-
-.jump-to-button#right{
-	left: 75%;
-  	margin-left: -75px;
-}
-.jump-to-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.line {
-	border-bottom-style: solid;
-	border-bottom-color: #000;
-	border-bottom-width: 2px;
-}
-
-/*--------------------------------------------------*/
-/* FOOTER */
-/*--------------------------------------------------*/
-footer{
-	font-family: 'Righteous', cursive;
-}
-
-.works-cited{
-}
-
