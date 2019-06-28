@@ -44,10 +44,48 @@ header{
     transform: translate(-50%, -50%);
 }
 
-.links {
+.linksList {
     display: flex;
     list-style: none;
     
 }
+
+.Links-Box {
+    text-align: center;
+}
+
+.Vusar{
+    margin: 50px 0;
+    position: relative;
+}
+
+.VusarLeftContentBox {
+    display: inline-block;
+     width: 60%;
+}
+
+.VusarLeftContentBox h1{
+    margin-left: 25px;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+
+.VusarLeftContentBox p{
+    margin-left: 75px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.Vusar img{
+    display: inline-block;
+    width: auto;
+    height: 135%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-25%, -50%);  
+}
+
 
 
