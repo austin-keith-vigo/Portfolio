@@ -23,8 +23,31 @@ html {
 /* HEADER */
 /*--------------------------------------------------*/
 header{
-    background-color: darkorange;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     background-position: center;
+    background-image: url(images/Grey_Gradient.jpg);
 }
+
+.MainTitle {
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color:black;
+    display: block;  
+}
+
+.MainTitleAndLinks {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    
+}
+
+
