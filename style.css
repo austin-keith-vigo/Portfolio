@@ -19,6 +19,12 @@ html {
 	position: relative;
 }
 
+@font-face {
+font-family: "Helvetica";
+src: url("fonts/helvetica-2-cufonfonts-webfont/Helvetica-BoldOblique.woff");
+
+}
+
 /*--------------------------------------------------*/
 /* HEADER */
 /*--------------------------------------------------*/
@@ -27,28 +33,27 @@ header{
     height: 80vh;
     background-position: center;
     background-image: url(images/Grey_Gradient.jpg);
+    text-align: center;
 }
 
 .MainTitle {
     font-size: 75px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     color:black;
     display: block;  
 }
 
-.MainTitleAndLinks {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.Quote{
+    width: 500px;
+    height: auto;
 }
-.MainTitleAndLinks h2{
-    margin: 15px;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Quicksand', sans-serif;
-    color:darkslateblue;
+
+.MainTitleAndQuote{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 .links{
     list-style: none;
@@ -74,7 +79,7 @@ header{
 .VusarLeftContentBox h1{
     margin-left: 25px;
     font-size: 35px;
-    font-family: 'Pacifico', cursive;
+    font-family: "Helvetica";
 }
 
 .VusarLeftContentBox p{
