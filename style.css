@@ -30,7 +30,7 @@ header{
 }
 
 .MainTitle {
-    font-size: 50px;
+    font-size: 100px;
     font-family: 'Pacifico', cursive;
     text-align: center;
     color:black;
@@ -43,16 +43,14 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.linksList {
-    display: flex;
+.links{
     list-style: none;
-    
-}
-
-.Links-Box {
     text-align: center;
 }
+.links li{
+    display: inline-block;
+}
+
 
 .Vusar{
     margin: 50px 0;
@@ -89,3 +87,7 @@ header{
 
 
 
+
+#linkedIn {
+
+}
