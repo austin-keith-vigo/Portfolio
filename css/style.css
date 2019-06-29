@@ -1,0 +1,160 @@
+/*--------------------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 15px;
+	color: #000;
+}
+
+/*--------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*--------------------------------------------------*/
+.row{
+	margin: 0 auto;
+	position: relative;
+}
+
+body{
+    width: 1140px;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("fonts/helvetica-2-cufonfonts-webfont/Helvetica-BoldOblique.woff");
+}
+
+
+.SectionTitle {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Josefin sans";
+    margin-bottom: 20px;
+    
+}
+/*--------------------------------------------------*/
+/* About Me */
+/*--------------------------------------------------*/
+.AboutMeWrap {
+    min-width: 1140px;
+    max-width: 1280px;
+}
+.AboutMe {
+    position: relative;
+    width: 1280px;
+    height: 480px;
+    margin-bottom: 30px;
+}
+
+.AboutMeTitleBox {
+    
+}
+
+.SelfPortrait{
+    width: 200px;
+    height: auto;
+}
+
+.AboutMeParagraph{
+    margin: 30px 30px;
+    font-family: "Josefin sans";
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.SelfPortraitBox {
+    width: 640px;
+    float: right;
+    text-align: center;
+}
+
+.AboutMeParagraphBox {
+    width: 640px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------*/
+/* Skills */
+/*--------------------------------------------------*/
+.SkillsWrap {
+    min-width: 1140px;
+    max-width: 1280px;
+}
+.Skills {
+    width: 1280px;
+    height: 640px;
+}
+
+.SkillsTitleBox {
+    
+}
+.SkillsTitle{   
+}
+
+.SoftSkillsImage {
+    height: 500px;
+    width: auto;
+}
+
+.SoftSkillsImageBox{
+    float:left;
+    width: 640px;
+    text-align: center;
+}
+
+.TechnicalSkillsImage{
+    height: 500px;
+    width: auto;
+}
+
+.TechnicalSkillsImageBox{
+    float: left;
+     width: 640px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------*/
+/* Portfolio */
+/*--------------------------------------------------*/
+.Portfolio {
+    background-color: bisque;
+}
+
+.Title {
+    background-color: brown;
+}
+
+.ContactMe {
+    background-color: fuchsia;
+}
+
+.NavBar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+
+
+
+
+
+
