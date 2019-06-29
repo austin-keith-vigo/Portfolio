@@ -20,48 +20,44 @@
     <!--***************************
     *About Me section
     ****************************-->
-    <div class="AboutMe">
-        <div class="AboutMeWrap">
-            <div class="AboutMeTitleBox">
-                <h1 class="SectionTitle">ABOUT ME</h1>
+    <section class="Section" id="AboutMe">
+       <div class="Wrap"  id="AboutMeWrap"> 
+            <div class="TitleBox" id="AboutMeTitleBox">
+                <h1 class="SectionTitle" id="AboutMeTitle">ABOUT ME</h1>
             </div>
-            <div class="AboutMeParagraphBox">
-                <p class="AboutMeParagraph">
-                    I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
-                    <br>
-                    <br>
-                    Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
-                </p>
+            <div class="sideBySideBoxesContainer">
+                <div class="leftHalfScreenBox" id="SelfPortraitBox">
+                    <img src="images/linkedin.png" id="SelfPortrait">
+                </div>
+                <div class="rightHalfScreenBox" id="AboutMeParagraphBox">
+                    <p id="AboutMeParagraph">
+                       I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
+                       <br>
+                       <br>
+                       Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.</p>
+                </div>
             </div>
-            <div class="SelfPortraitBox">
-                <img src="images/linkedin.png" class="SelfPortrait">           
-            </div>           
-        </div>   
-    </div>
-    
+       </div>
+    </section>
 
     <!--***************************
     *Skills section
     ****************************-->
-    <div class="Skills">
-        <div class="SkillsWrap">
-            <div class="SkillsTitleBox">
-                <h1 class="SectionTitle">SKILLS</h1>
+    <section class="Section" id="Skills">
+        <div class="Wrap" id="SkillsWrap">
+            <div class="TitleBox" id="SkillsTitleBox">
+                <h1 class="SectionTitle" id="SkillsTitle">SKILLS</h1>
             </div>
-            <div class="SoftSkillsImageBox">
-                <img src="images/resume.png" class="SoftSkillsImage">
-            </div>
-            <div class=TechnicalSkillsImageBox>
-                <img src="images/resume.png" class="TechnicalSkillsImage">            
+            <div class="sideBySideBoxesContainer">
+                <div class="rightHalfScreenBox" id="SoftSkillsImageBox">
+                    <img src="images/linkedin.png" id="SoftSkillsImage">
+                </div>
+                <div class="leftHalfScreenBox" id="TechnicalSkillsImageBox">
+                    <img src="images/linkedin.png" id="TechnicalSkillsImage">
+                </div>
             </div>
         </div>
-
-        
-        
-        
-        
-        
-    </div>
+    </section>
     
     <!--***************************
     *Portfolio section
@@ -82,12 +78,14 @@
     </footer>
     
 
-
     <nav class="NavBar">
-       <a href="#">About Me</a>
-       <a href="#">Skills</a>
-       <a href="#">Portfolio</a>
-       <a href="#">Contact Me</a>
+        <ul class="NavBarList">
+            <a href="#" class="NavBarLink">About Me</a>
+            <a href="#" class="NavBarLink">Skills</a>
+            <a href="#" class="NavBarLink">Portfolio</a>
+            <a href="#" class="NavBarLink">Contact Me</a>            
+        </ul>
+
    </nav>
 </body>
 

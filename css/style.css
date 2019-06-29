@@ -21,6 +21,7 @@ html {
 
 body{
 /*    width: 1140px;*/
+    margin-top: 50px;
 }
 
 @font-face {
@@ -33,104 +34,74 @@ body{
     text-align: center;
     font-size: 35px;
     font-family: "Josefin sans";
-    margin-bottom: 20px;
 }
+
+.Wrap {
+    min-width: 1280px;
+    max-width: 1280px;
+    margin: auto;
+    
+}
+.sideBySideBoxesContainer {
+    display: flex;
+}
+.rightHalfScreenBox {
+    width: 640px;
+    flex: 1;
+}
+.leftHalfScreenBox {
+    width: 640px;
+    flex: 1;
+}
+
 /*--------------------------------------------------*/
 /* About Me */
 /*--------------------------------------------------*/
-.AboutMeWrap {
-    min-width: 1140px;
-    max-width: 1280px;
-}
-.AboutMe {
-    position: relative;
-    width: 1280px;
-    height: 480px;
-    margin: 0px auto 30px auto;
-}
-
-.AboutMeTitleBox {
+#AboutMe {
     
 }
-
-.SelfPortrait{
-    width: 200px;
-    height: auto;
+#SelfPortrait {
+    width: 300px;
 }
 
-.AboutMeParagraph{
-    margin: 30px 30px;
+#AboutMeParagraph{
     font-family: "Josefin sans";
     font-size: 20px;
     line-height: 1.5;
+    margin: 30px;
 }
-
-.SelfPortraitBox {
-    width: 640px;
-    float: right;
+#AboutMeParagraphBox {
+    background-color: antiquewhite;
+}
+#SelfPortraitBox {
     text-align: center;
+    background-color: aqua;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-.AboutMeParagraphBox {
-    width: 640px;
-    float: right;
-}
-
-
-
-
-
-
-
-
 /*--------------------------------------------------*/
 /* Skills */
 /*--------------------------------------------------*/
-.SkillsWrap {
-    min-width: 1140px;
-    max-width: 1280px;
-}
-.Skills {
-    width: 1280px;
-    height: 640px;
-        margin: 0px auto 30px auto;
-    
-}
-
-.SkillsTitleBox {
-    
-}
-.SkillsTitle{   
-}
-
-.SoftSkillsImage {
-    height: 500px;
-    width: auto;
-}
-
-.SoftSkillsImageBox{
-    float:left;
-    width: 640px;
+#TechnicalSkillsImageBox {
+    background-color: aquamarine;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-.TechnicalSkillsImage{
-    height: 500px;
-    width: auto;
-}
-
-.TechnicalSkillsImageBox{
-    float: left;
-     width: 640px;
+#SoftSkillsImageBox {
+    background-color: bisque;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
+#TechnicalSkillsImage{
+    width: 300px;
+}
 
-
-
-
-
-
+#SoftSkillsImage {
+    width: 300px;
+}
 
 /*--------------------------------------------------*/
 /* Portfolio */
@@ -139,19 +110,43 @@ body{
     background-color: bisque;
 }
 
-.Title {
-    background-color: brown;
-}
 
-.ContactMe {
-    background-color: fuchsia;
-}
 
+/*--------------------------------------------------*/
+/* Portfolio */
+/*--------------------------------------------------*/
 .NavBar {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    background-color: aquamarine;
+    height: 50px;
 }
+
+.NavBarList {
+
+}
+.NavBarLink{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: "Josefin sans";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
