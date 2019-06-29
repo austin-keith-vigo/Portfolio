@@ -53,7 +53,13 @@ body{
     width: 640px;
     flex: 1;
 }
-
+/*--------------------------------------------------*/
+/* Big Name Banner */
+/*--------------------------------------------------*/
+.BigNameBannerBox{
+    width: 100vw;
+    height: 100vh;
+}
 /*--------------------------------------------------*/
 /* About Me */
 /*--------------------------------------------------*/
@@ -71,25 +77,22 @@ body{
     margin: 30px;
 }
 #AboutMeParagraphBox {
-    background-color: antiquewhite;
 }
 #SelfPortraitBox {
     text-align: center;
-    background-color: aqua;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 /*--------------------------------------------------*/
 /* Skills */
 /*--------------------------------------------------*/
 #TechnicalSkillsImageBox {
-    background-color: aquamarine;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
 }
 #SoftSkillsImageBox {
-    background-color: bisque;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -107,7 +110,6 @@ body{
 /* Portfolio */
 /*--------------------------------------------------*/
 .Portfolio {
-    background-color: bisque;
 }
 
 
@@ -118,21 +120,25 @@ body{
 .NavBar {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
     background-color: aquamarine;
     height: 50px;
+    display: flex;
+    align-items: center;
 }
 
+.NavBar *{
+    display: inline
+}
 .NavBarList {
 
 }
 .NavBarLink{
-    font-size: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: 35px;
     text-decoration: none;
     color: black;
     font-family: "Josefin sans";
+    margin: 20px;
 }
 
 
