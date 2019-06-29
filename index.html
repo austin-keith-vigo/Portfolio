@@ -1,120 +1,94 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Austin Vigo - Portfolio</title>
-		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="Grid.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Austin Vigo - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="external-css-files/Grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-	<body>
-		<header>
-			<div class="title-box">
-				AUSTIN VIGO
-			</div>
-			<div class="nav-bar-box">
-				<ul class="nav-bar">
-					<li><a href="https://www.linkedin.com/in/austin-vigo/"">iOS Development</a></li>
-					<li><a href="#">Game Development</a></li>
-					<li><a href="#">Web Development</a></li>
-				</ul>
-			</div>
-			<div class="reference-icons-box">
-				<ul class="reference-icons">
-					<li><a id="linkedin-icon" href="https://www.linkedin.com/in/austin-vigo/" target="_blank"><img src="linkedin.png" style="width:30px; height:30px" title="linkedin" ></a></li>
-					<li><a id="resume-icon" href="austins-resume.pdf" target="_blank"><img src="resume.png" style="width:30px; height:30px" title="resume"></a></li>
-				</ul>
-			</div>
-		</header>
-		<div class="line"></div>
+<body>
 
-		<section id="about-me-section">
-			<h1 style="font-size: 25px">About Me</h1>
-			<p style="margin-top: 5px">
-				As a student at UCI, I am pursuing a Bachelor's Degree in Computer Science with a specialization in information. I currently am interning at two startups which both involve iOS Development. Even though I mainly do iOS Developmet however, my curiosity for other fields has lead me to dabble in other things such as web and game developemnt. I not only have an interest in development, but I also intend to look into the world of Cybersecurity as I find that field very interesting.
-			</p>
-		</section>
+    <header class="Title">
+        <nav class="NavBar">
+            <ul class="NavBarList">
+                <a href="#" class="NavBarLink">About Me</a>
+                <a href="#" class="NavBarLink">Skills</a>
+                <a href="#" class="NavBarLink">Portfolio</a>
+                <a href="#" class="NavBarLink">Contact Me</a>            
+            </ul>
+        </nav>
+    </header>
+    
+    <!--***************************
+    *About Me section
+    ****************************-->
+    <section>
+        <img src="images/Grey_Gradient.jpg" class="BigNameBannerBox"id="BigNameBanner">
+    </section>
+    <section class="Section" id="AboutMe">
+       <div class="Wrap"  id="AboutMeWrap"> 
+            <div class="TitleBox" id="AboutMeTitleBox">
+                <h1 class="SectionTitle" id="AboutMeTitle">ABOUT ME</h1>
+            </div>
+            <div class="sideBySideBoxesContainer">
+                <div class="leftHalfScreenBox" id="SelfPortraitBox">
+                    <img src="images/linkedin.png" id="SelfPortrait">
+                </div>
+                <div class="rightHalfScreenBox" id="AboutMeParagraphBox">
+                    <p id="AboutMeParagraph">
+                       I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
+                       <br>
+                       <br>
+                       Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.</p>
+                </div>
+            </div>
+       </div>
+    </section>
 
-		<div class="line"></div>
+    <!--***************************
+    *Skills section
+    ****************************-->
+    <section class="Section" id="Skills">
+        <div class="Wrap" id="SkillsWrap">
+            <div class="TitleBox" id="SkillsTitleBox">
+                <h1 class="SectionTitle" id="SkillsTitle">SKILLS</h1>
+            </div>
+            <div class="sideBySideBoxesContainer">
+                <div class="rightHalfScreenBox" id="SoftSkillsImageBox">
+                    <img src="images/linkedin.png" id="SoftSkillsImage">
+                </div>
+                <div class="leftHalfScreenBox" id="TechnicalSkillsImageBox">
+                    <img src="images/linkedin.png" id="TechnicalSkillsImage">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--***************************
+    *Portfolio section
+    ****************************-->
+    <div class="Portfolio">
+        
+        
+        
+        
+        
+    </div>
 
-		<section id="highlights-section">
-			<div class="highlights-box" id="internships-box">
-				<h1>Internships</h1>
-				<div class="row">
-					<div class="col span-1-of-2" style="">
-						<div class="highlight-card">
-							<h2>Vusar</h2>
-							<p>
-								Vusar is a startup in the tech industry. They are making waves in the augmented reality scene and I am grateful to be apart of this company. Being able to work in a growing field is exciting and challenging.
-							</p>
-							<a class="jump-to-button" id="left" href="#">Jump To Page</a>
-						</div>
+    <!--***************************
+    *Contact Me section
+    ****************************-->
+    <footer class="ContactMe">
+        
+    </footer>
+    
 
-					</div>
-					<div class="col span-1-of-2">
-						<div class="highlight-card">
-							<h2>Red Apple</h2>
-							<p>
-								At Red Apple I have had the privelage of working with an experienced iOS developer who is acting as my supervisor as well as my mentor. Having written over 30 unit tests, I have gained valuable experience in the development process seperate from Vusar.
-							</p>
-							<a class="jump-to-button" id="right" href="#">Jump To Page</a>
-						</div>
-
-					</div>
-				</div>	
-			</div>
-
-			<!---
-			<div class="jump-to-buttons">
-				<div class="row">
-					<div class="col span-1-of-2">
-						<a class="jump-to-button" href="#">Jump To Page</a>
-					</div>
-					<div class="col span-1-of-2">
-						<a class="jump-to-button" href="#">Jump To Page</a>
-					</div>
-				</div>
-			</div>
-			-->
-
-
-			<div class="highlights-box" id="personal-projects-box">
-			<h1 class="highlights-h1">Personal Projects</h1>
-				<div class="row">
-					<div class="col span-1-of-2">
-						<h2>Website</h2>
-						<p>
-							The summer of 2019 was when I set out to learn new skills, with one of them being web-development. My first go at this endeavor was my personal website. Everything I have learned about it has gone into this website.
-						</p>
-					</div>
-					<div class="col span-1-of-2">
-						<h2>2-D Platformer</h2>
-						<p>
-							Being a gamer my whole life, the idea of being able to create a game was intriguing to me. So, my first quarter 5 other developers and I sought out to create a 2-D Platformer using the Unity-Engine.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="jump-to-buttons">
-				<div class="row">
-					<div class="col span-1-of-2">
-						<a class="jump-to-button" href="#">Jump To Page</a>
-					</div>
-					<div class="col span-1-of-2">
-						<a class="jump-to-button" href="#">Jump To Page</a>
-					</div>
-				</div>
-			</div>
+</body>
 
 
-		</section>
 
-		<div class="line"></div>
-	</body>
-
-	<footer>
-		<div class="works-cited">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-			</div>
-	</footer>
 </html>

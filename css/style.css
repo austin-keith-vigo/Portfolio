@@ -1,0 +1,162 @@
+/*--------------------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 15px;
+	color: #000;
+}
+
+/*--------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*--------------------------------------------------*/
+.row{
+	margin: 0 auto;
+	position: relative;
+}
+
+body{
+/*    width: 1140px;*/
+    margin-top: 50px;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("fonts/helvetica-2-cufonfonts-webfont/Helvetica-BoldOblique.woff");
+}
+
+
+.SectionTitle {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Josefin sans";
+}
+
+.Wrap {
+    min-width: 1280px;
+    max-width: 1280px;
+    margin: auto;
+    
+}
+.sideBySideBoxesContainer {
+    display: flex;
+}
+.rightHalfScreenBox {
+    width: 640px;
+    flex: 1;
+}
+.leftHalfScreenBox {
+    width: 640px;
+    flex: 1;
+}
+/*--------------------------------------------------*/
+/* Big Name Banner */
+/*--------------------------------------------------*/
+.BigNameBannerBox{
+    width: 100vw;
+    height: 100vh;
+}
+/*--------------------------------------------------*/
+/* About Me */
+/*--------------------------------------------------*/
+#AboutMe {
+    
+}
+#SelfPortrait {
+    width: 300px;
+}
+
+#AboutMeParagraph{
+    font-family: "Josefin sans";
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 30px;
+}
+#AboutMeParagraphBox {
+}
+#SelfPortraitBox {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*--------------------------------------------------*/
+/* Skills */
+/*--------------------------------------------------*/
+#TechnicalSkillsImageBox {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#SoftSkillsImageBox {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#TechnicalSkillsImage{
+    width: 300px;
+}
+
+#SoftSkillsImage {
+    width: 300px;
+}
+
+/*--------------------------------------------------*/
+/* Portfolio */
+/*--------------------------------------------------*/
+.Portfolio {
+}
+
+
+
+/*--------------------------------------------------*/
+/* Portfolio */
+/*--------------------------------------------------*/
+.NavBar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100vw; /* Full width */
+    background-color: aquamarine;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.NavBar *{
+    display: inline
+}
+.NavBarList {
+
+}
+.NavBarLink{
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    font-family: "Josefin sans";
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
