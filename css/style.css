@@ -20,7 +20,7 @@ html {
 }
 
 body{
-    width: 1140px;
+/*    width: 1140px;*/
 }
 
 @font-face {
@@ -34,7 +34,6 @@ body{
     font-size: 35px;
     font-family: "Josefin sans";
     margin-bottom: 20px;
-    
 }
 /*--------------------------------------------------*/
 /* About Me */
@@ -47,7 +46,7 @@ body{
     position: relative;
     width: 1280px;
     height: 480px;
-    margin-bottom: 30px;
+    margin: 0px auto 30px auto;
 }
 
 .AboutMeTitleBox {
@@ -94,6 +93,8 @@ body{
 .Skills {
     width: 1280px;
     height: 640px;
+        margin: 0px auto 30px auto;
+    
 }
 
 .SkillsTitleBox {
