@@ -68,6 +68,8 @@ body{
 }
 #SelfPortrait {
     width: 300px;
+    max-width: 640px;
+    height: auto;
 }
 
 #AboutMeParagraph{
@@ -77,6 +79,7 @@ body{
     margin: 30px;
 }
 #AboutMeParagraphBox {
+    
 }
 #SelfPortraitBox {
     text-align: center;
@@ -100,10 +103,14 @@ body{
 
 #TechnicalSkillsImage{
     width: 300px;
+    max-width: 640px;
+    height: auto;
 }
 
 #SoftSkillsImage {
     width: 300px;
+    max-width: 640px;
+    height: auto;
 }
 
 /*--------------------------------------------------*/
