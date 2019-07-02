@@ -66,10 +66,13 @@ body{
 /*--------------------------------------------------*/
 /* Big Name Banner */
 /*--------------------------------------------------*/
+
 .Title{
     height: 700px;
-    width: 1280px;
+    width: 100vw;
 }
+
+
 /*--------------------------------------------------*/
 /* About Me */
 /*--------------------------------------------------*/
@@ -128,9 +131,34 @@ body{
     margin-bottom: auto;
 }
 
+.SkillBarBox{
+    margin-left: auto;
+    margin-right: auto;
+    height: 25px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+.SkillBar{
+    height: 25px;
+    margin-left: 4px;
+}
+.SkillName{
+    text-align: left;
+}
+.SkillName h1{
+    color: white;
+    padding-left: 1px;
+    font-family: "Josefin sans";
+    padding-top: 3px;
+}
+
 #TechnicalSkillsImage{
     width: 300px;
-    max-width: 640px;
     height: auto;
 }
 
@@ -162,8 +190,12 @@ body{
 
 
 /*--------------------------------------------------*/
-/* Portfolio */
+/* Contact Me */
 /*--------------------------------------------------*/
+#ContactMe{
+    background-size: cover;
+    background-position: center;
+}
 .EmailMeContainer{
     text-align: center;
 }
