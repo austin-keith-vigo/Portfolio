@@ -66,11 +66,13 @@ body{
 /*--------------------------------------------------*/
 /* Big Name Banner */
 /*--------------------------------------------------*/
+
 .Title{
     height: 700px;
     width: 100vw;
-    background-size: cover;
 }
+
+
 /*--------------------------------------------------*/
 /* About Me */
 /*--------------------------------------------------*/
@@ -157,7 +159,6 @@ body{
 
 #TechnicalSkillsImage{
     width: 300px;
-    max-width: 640px;
     height: auto;
 }
 
@@ -189,8 +190,12 @@ body{
 
 
 /*--------------------------------------------------*/
-/* Portfolio */
+/* Contact Me */
 /*--------------------------------------------------*/
+#ContactMe{
+    background-size: cover;
+    background-position: center;
+}
 .EmailMeContainer{
     text-align: center;
 }
