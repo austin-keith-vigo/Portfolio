@@ -25,7 +25,7 @@ body{
 }
 
 .Section {
-    height: 900px;
+    height: 700px;
 }
 
 @font-face {
@@ -97,6 +97,7 @@ body{
 
 #AboutMeSideBySideBoxesContainer{
     position: relative;
+    height: 500px;
 }
 #AboutMeBannerOverlay{
     position: absolute;
