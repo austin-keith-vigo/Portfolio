@@ -12,14 +12,29 @@
        })();
     </script>
     <script>
+        function clearUserEmailTextField(){
+            var userEmailTextFieldDOM = document.getElementById("UserEmailTextField");
+            userEmailTextFieldDOM.value = "";
+            userEmailTextFieldDOM.style.color = "black";
+        }
+        function clearUserTextBody(){
+            var userTextBodyDom = document.getElementById("UserTextBody");
+            userTextBodyDom.value = "";
+            userTextBodyDom.style.color = "black";
+        }
+        
         function sendEmail(senderText, bodyText){
-            var userName = document.getElementById("UserEmailTextField").value;
-            document.getElementById("UserEmailTextField").value = "";
+            var userEmail = document.getElementById("UserEmailTextField").value;
+            var emailBody = document.getElementById("UserTextBody").value;
+            
             var template_params = {
-           "sender": "this actually sent",
-           "body": userName
+           "subject": userEmail,
+           "body": emailBody
             }
-
+            
+            clearUserEmailTextField();
+            clearUserTextBody();
+            
             var service_id = "default_service";
             var template_id = "contact_form";
             emailjs.send(service_id, template_id, template_params);
@@ -34,7 +49,6 @@
    <header>
        <img src="images/BANNER_FULL.png" class="Title">
    </header>
-    
     <!--***************************
     *About Me section
     ****************************-->
@@ -172,9 +186,23 @@
             </div>
             <div class="EmailMeContainer">
                  <form>
-                    <input type="text" name="firstname" id="UserEmailTextField"><br>
+                    <div class="DivWith2OverlappingElements" id="UserEmailTextFieldWithHeaderBox">
+                        <input type="text" name="firstname" id="UserEmailTextField" onclick="clearUserEmailTextField()">
+                        <script>
+                            //Set up the UI for the textField to indicate the user should enter their email
+                            var userEmailTextFieldDOM = document.getElementById("UserEmailTextField");
+                            userEmailTextFieldDOM.value = "Your Email Address:";
+                            userEmailTextFieldDOM.style.color = "#848487";
+                        </script>
+                    </div>
+                    <textarea rows="4" cols="50" style="resize: none;" id="UserTextBody" onclick="clearUserTextBody()"></textarea>
+                    <script>
+                        var userTextBodyDOM = document.getElementById("UserTextBody");
+                        userTextBodyDOM.value = "Your Email Body:"
+                        userTextBodyDOM.style.color = "#848487";
+                    </script>
                 </form> 
-                <button class="sendButton" onclick="sendEmail()">pressMe</button>         
+                <button class="sendButton" onclick="sendEmail()">SEND</button>         
             </div>      
         </div>
     </section>
