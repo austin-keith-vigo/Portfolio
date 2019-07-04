@@ -46,8 +46,68 @@
 </head>
 
 <body>
-   <header>
-       <img src="images/BANNER_FULL.png" class="Title">
+   <header class="Title" style="background-image: url(images/BG.png)">
+        <div class="AnimatingBars" id="LeftAnimatingBars">
+            <div class="AnimatingBar" id="LeftBar0"></div>
+            <div class="AnimatingBar" id="LeftBar1"></div>
+            <div class="AnimatingBar" id="LeftBar2"></div>
+            <div class="AnimatingBar" id="LeftBar3"></div>
+            <div class="AnimatingBar" id="LeftBar4"></div>
+            <div class="AnimatingBar" id="LeftBar5"></div>
+            <div class="AnimatingBar" id="LeftBar6"></div>
+            <div class="AnimatingBar" id="LeftBar7"></div>
+            <div class="AnimatingBar" id="LeftBar8"></div>
+            <div class="AnimatingBar" id="LeftBar9"></div>
+            <div class="AnimatingBar" id="LeftBar10"></div>
+       </div>
+       
+        <div class="AnimatingBars" id="RightAnimatingBars">
+            <div class="AnimatingBar" id="RightBar0"></div>
+            <div class="AnimatingBar" id="RightBar1"></div>
+            <div class="AnimatingBar" id="RightBar2"></div>
+            <div class="AnimatingBar" id="RightBar3"></div>
+            <div class="AnimatingBar" id="RightBar4"></div>
+            <div class="AnimatingBar" id="RightBar5"></div>
+            <div class="AnimatingBar" id="RightBar6"></div>
+            <div class="AnimatingBar" id="RightBar7"></div>
+            <div class="AnimatingBar" id="RightBar8"></div>
+            <div class="AnimatingBar" id="RightBar9"></div>
+            <div class="AnimatingBar" id="RightBar10"></div>
+       </div>     
+
+        <div class="NameTitle">
+            <img src="images/BANNER.png">    
+        </div>
+       
+        <!--Randomize the height and the padding of each bar. Lastly set the bars animation-->
+        <script>
+            var numOfBars = 11;
+            var barHeight = 0;
+            var paddingRight = 0;
+            for (barIndex = 0; barIndex < numOfBars; barIndex++){
+                
+                //Get the height
+                barHeight = Math.floor(Math.random() * (500 - 150 + 1)) + 150;
+                marginRight = Math.floor(Math.random() * (12 - 3 + 1)) + 3;
+                
+                //Get the margin
+                var barHeightToString = (barHeight.toString() + "px");
+                var marginRightToString = (marginRight.toString() + "px");
+                
+                //Set the left bars
+                var leftBar = ("LeftBar" + barIndex.toString());        
+                var leftBarDOM = document.getElementById(leftBar);
+                leftBarDOM.style.height = barHeightToString;
+                leftBarDOM.style.marginRight = marginRightToString;
+                
+                //Set the right bars
+                var rightBarIndex = (numOfBars - 1) - barIndex;
+                var rightBar = ("RightBar" + rightBarIndex.toString());
+                var rightBarDOM = document.getElementById(rightBar);
+                rightBarDOM.style.height = barHeightToString;
+                rightBarDOM.style.marginLeft = marginRightToString;
+           }
+        </script>
    </header>
     <!--***************************
     *About Me section
@@ -179,7 +239,7 @@
     <!--***************************
     *Contact Me section
     ****************************-->
-    <section class="Section" id="ContactMe" style="background-image: url(images/BG.png)">
+    <section class="Section" id="ContactMe" style="background-image: url(images/BG_UPSIDEDOWN.png)">
         <div class="Wrap" id="ContactMeWrap">
             <div class="TitleBox" id="ContactMeTitleBox">
                 <h1 class="SectionTitle" id="ContactMeTitle">CONTACT ME</h1>
