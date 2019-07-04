@@ -76,6 +76,17 @@ body{
     min-width: 1280px;
 }
 
+.AnimatingBars{
+    height: 500px;
+    width: 250px;
+}
+.AnimatingBar{
+    width: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
 
 /*--------------------------------------------------*/
 /* About Me */

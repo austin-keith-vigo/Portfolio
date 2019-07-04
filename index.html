@@ -46,8 +46,43 @@
 </head>
 
 <body>
-   <header>
-       <img src="images/BANNER_FULL.png" class="Title">
+   <header class="Title" style="background-image: url(images/BG.png)">
+       <div class="AnimatingBars" id="LeftAnimatingBars">
+            <img class="AnimatingBar" id="LeftBar0" src="images/COLOR_BAR_1_ANIMATING.png">             
+            <img class="AnimatingBar" id="LeftBar1" src="images/COLOR_BAR_1_ANIMATING.png">  
+            <img class="AnimatingBar" id="LeftBar2" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar3" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar4" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar5" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar6" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar7" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar8" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar9" src="images/COLOR_BAR_1_ANIMATING.png">
+            <img class="AnimatingBar" id="LeftBar10" src="images/COLOR_BAR_1_ANIMATING.png">
+       </div>
+        <!--Randomize the height and the padding of each bar-->
+        <script>
+            var numOfBars = 11;
+            var barHeight = 0;
+            var paddingRight = 0;
+            for (barIndex = 0; barIndex < numOfBars; barIndex++){
+                
+                //Get the height
+                barHeight = Math.floor(Math.random() * (500 - 150 + 1)) + 150;
+                marginRight = Math.floor(Math.random() * (12 - 3 + 1)) + 3;
+                
+                var barHeightToString = (barHeight.toString() + "px");
+                var marginRightToString = (marginRight.toString() + "px");
+                
+                var currentBar = ("LeftBar" + barIndex.toString());        
+                var barDOM = document.getElementById(currentBar);
+                barDOM.style.height = barHeightToString;
+                barDOM.style.marginRight = marginRightToString;
+           }
+        </script>
+        <script>
+            
+        </script>
    </header>
     <!--***************************
     *About Me section
@@ -179,7 +214,7 @@
     <!--***************************
     *Contact Me section
     ****************************-->
-    <section class="Section" id="ContactMe" style="background-image: url(images/BG.png)">
+    <section class="Section" id="ContactMe" style="background-image: url(images/BG_UPSIDEDOWN.png)">
         <div class="Wrap" id="ContactMeWrap">
             <div class="TitleBox" id="ContactMeTitleBox">
                 <h1 class="SectionTitle" id="ContactMeTitle">CONTACT ME</h1>
