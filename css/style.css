@@ -74,6 +74,7 @@ body{
     height: 700px;
     width: 100vw;
     min-width: 1280px;
+    background-size: cover;
 }
 
 .AnimatingBars{
