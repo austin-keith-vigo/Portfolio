@@ -47,7 +47,7 @@
 
 <body>
    <header class="Title" style="background-image: url(images/BG.png)">
-       <div class="AnimatingBars" id="LeftAnimatingBars">
+        <div class="AnimatingBars" id="LeftAnimatingBars">
             <div class="AnimatingBar" id="LeftBar0"></div>
             <div class="AnimatingBar" id="LeftBar1"></div>
             <div class="AnimatingBar" id="LeftBar2"></div>
@@ -60,6 +60,21 @@
             <div class="AnimatingBar" id="LeftBar9"></div>
             <div class="AnimatingBar" id="LeftBar10"></div>
        </div>
+       
+        <div class="AnimatingBars" id="RightAnimatingBars">
+            <div class="AnimatingBar" id="RightBar0"></div>
+            <div class="AnimatingBar" id="RightBar1"></div>
+            <div class="AnimatingBar" id="RightBar2"></div>
+            <div class="AnimatingBar" id="RightBar3"></div>
+            <div class="AnimatingBar" id="RightBar4"></div>
+            <div class="AnimatingBar" id="RightBar5"></div>
+            <div class="AnimatingBar" id="RightBar6"></div>
+            <div class="AnimatingBar" id="RightBar7"></div>
+            <div class="AnimatingBar" id="RightBar8"></div>
+            <div class="AnimatingBar" id="RightBar9"></div>
+            <div class="AnimatingBar" id="RightBar10"></div>
+       </div>     
+
        
         <!--Randomize the height and the padding of each bar. Lastly set the bars animation-->
         <script>
@@ -76,10 +91,18 @@
                 var barHeightToString = (barHeight.toString() + "px");
                 var marginRightToString = (marginRight.toString() + "px");
                 
-                var currentBar = ("LeftBar" + barIndex.toString());        
-                var barDOM = document.getElementById(currentBar);
-                barDOM.style.height = barHeightToString;
-                barDOM.style.marginRight = marginRightToString;
+                //Set the left bars
+                var leftBar = ("LeftBar" + barIndex.toString());        
+                var leftBarDOM = document.getElementById(leftBar);
+                leftBarDOM.style.height = barHeightToString;
+                leftBarDOM.style.marginRight = marginRightToString;
+                
+                //Set the right bars
+                var rightBarIndex = (numOfBars - 1) - barIndex;
+                var rightBar = ("RightBar" + rightBarIndex.toString());
+                var rightBarDOM = document.getElementById(rightBar);
+                rightBarDOM.style.height = barHeightToString;
+                rightBarDOM.style.marginLeft = marginRightToString;
            }
         </script>
    </header>
