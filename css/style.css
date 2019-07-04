@@ -87,9 +87,25 @@ body{
     width: 8px;
     display: inline-block;
     vertical-align: top;
-    background-color: #8BB990;
 }
 
+.ColorBar{
+    background-color: black;
+    width: 100%;
+    animation-name: IncreaseBarHeight;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes IncreaseBarHeight{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
 #RightAnimatingBars{
     position: absolute;
     right: 0px;
