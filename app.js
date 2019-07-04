@@ -1,8 +1,6 @@
 /*-------------------------------------------
 /* ALL THE FUNCTIONALITY BEHIND THE ANIMATING BARS */
 /*-------------------------------------------*/
-
-
 class Bar {
     constructor(height, margin, color) {
         this.height = height;
