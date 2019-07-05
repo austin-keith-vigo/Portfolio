@@ -103,3 +103,34 @@ function closePopup(){
     var portfolioPopupDOM = document.getElementById("PortfolioPopup");
     portfolioPopupDOM.style.display = "none";
 }
+
+/*-------------------------------------------
+/* ALL THE FUNCTIONALITY BEHIND THE Nav-Bar */
+/*-------------------------------------------*/
+function extendNavBar(){
+    //Extend the Nav-bar
+    var navBarDOM = document.getElementById("NavBarDiv");
+    navBarDOM.style.width = "100vw";
+    navBarDOM.style.backgroundColor = "#8BB990";
+    
+    //Display the buttons
+    var buttons = document.getElementsByClassName("NavBarLink");
+    for (buttonIndex = 0; buttonIndex < buttons.length; ++buttonIndex){
+        buttons[buttonIndex].style.display = "inline";
+    }
+}
+
+function closeNavBar(){
+    //Hide Buttons
+    var buttons = document.getElementsByClassName("NavBarLink");
+    for (buttonIndex = 0; buttonIndex < buttons.length; ++buttonIndex){
+        buttons[buttonIndex].style.display = "none";
+    }
+    
+    //Close the navbar
+    var navBarDOM = document.getElementById("NavBarDiv");
+    navBarDOM.style.backgroundColor = "rgba(0,0,0,0)";
+    navBarDOM.style.width = "40px";
+    
+    
+}

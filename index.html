@@ -47,7 +47,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
    <header class="Title" style="background-image: url(images/BG.png)">
         <div class="AnimatingBars" id="LeftAnimatingBars">
             <div class="AnimatingBar" id="LeftBar0">
@@ -133,6 +133,7 @@
     <!--***************************
     *About Me section
     ****************************-->
+    <a class="Anchor" name="AboutMeAnchor"></a>
     <section class="Section" id="AboutMe">
        <div class="Wrap"  id="AboutMeWrap"> 
             <div class="TitleBox" id="AboutMeTitleBox">
@@ -158,6 +159,7 @@
     <!--***************************
     *Skills section
     ****************************-->
+    <a class="Anchor" name="SkillsAnchor"></a>
     <section class="Section" id="Skills">
         <div class="Wrap" id="SkillsWrap">
             <div class="TitleBox" id="SkillsTitleBox">
@@ -241,6 +243,7 @@
     <!--***************************
     *Portfolio section
     ****************************-->
+    <a class="Anchor" name="PortfolioAnchor"></a>
     <section class="Section" id="Portfolio">
         <div class="Wrap" id="PortfolioWrap">
             <div class="TitleBox" id="PortfolioTitleBox">
@@ -272,6 +275,7 @@
     <!--***************************
     *Contact Me section
     ****************************-->
+    <a class="Anchor" name="ContactMeAnchor"></a>
     <section class="Section" id="ContactMe" style="background-image: url(images/BG_UPSIDEDOWN.png)">
         <div class="Wrap" id="ContactMeWrap">
             <div class="TitleBox" id="ContactMeTitleBox">
@@ -302,15 +306,14 @@
     <!--***************************
     *Nav Bar
     ****************************-->
-    <nav class="NavBar">
-        <div class="Wrap">
+    <nav class="NavBar" id="NavBarDiv" onmouseover="extendNavBar()" onmouseout="closeNavBar()">     
+            <img src="images/BARS.png" id="NavBarButton" >
             <ul class="NavBarList">
-                <a href="#" class="NavBarLink">ABOUT ME</a>
-                <a href="#" class="NavBarLink">SKILLS</a>
-                <a href="#" class="NavBarLink">PORTFOLIO</a>
-                <a href="#" class="NavBarLink">CONTACT ME</a>            
-            </ul>           
-        </div>
+                <a href="#AboutMeAnchor" class="NavBarLink">ABOUT ME</a>
+                <a href="#SkillsAnchor" class="NavBarLink">SKILLS</a>
+                <a href="#PortfolioAnchor" class="NavBarLink">PORTFOLIO</a>
+                <a href="#ContactMeAnchor" class="NavBarLink">CONTACT ME</a>
+            </ul>  
 
     </nav>
 </body>
