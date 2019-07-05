@@ -77,8 +77,8 @@ body{
     display: none;
 }
 .PopupContent{
-    width: 75%;
-    height: 75%;
+    width: 1000px;
+    height: 450px;
     background: #bbb;
     margin: 100px auto;
     position: relative;
@@ -258,6 +258,11 @@ body{
 .GridItemContainer img{
     width: 300px;
     height: auto;
+}
+
+#PortfolioPopupWrap{
+    max-width: 1000px;
+    min-width: 1000px;
 }
 
 

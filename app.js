@@ -58,12 +58,46 @@ function getBarsData(){
 /*-------------------------------------------
 /* ALL THE FUNCTIONALITY BEHIND THE Popup */
 /*-------------------------------------------*/
+class Popup {
+    constructor(title, dates, summary) {
+        this.title = title;
+        this.dates = dates;
+        this.summary = summary;
+    }
+    
+    newPopupData(title, dates, summary){
+        this.title = title;
+        this.dates = dates;
+        this.summary = summary;
+    }
+}
+
+//The model for the popup
+var popup = new Popup("","","");
+
+//Gets called whenever the user wants to open a popup
 function openPopup(imageIndex){
+    
+    //Set the popup attributes
+    let newTitle = dataObjects[imageIndex].title;
+    let newDates = dataObjects[imageIndex].date;
+    let newSummary = dataObjects[imageIndex].projectSummary;
+    popup.newPopupData(newTitle, newDates, newSummary);
+    
+    //Update the View with the new data
+    var projectTitleDOM = document.getElementById("ProjectTitle");
+    var projectDatesDOM = document.getElementById("ProjectDates");
+    var projectSummaryDOM = document.getElementById("ProjectSummary");
+    projectTitleDOM.innerHTML = newTitle;
+    projectDatesDOM.innerHTML = newDates;
+    projectSummaryDOM.innerHTML = newSummary;
+    
     //Open the popup
     var portfolioPopupDOM = document.getElementById("PortfolioPopup");
     portfolioPopupDOM.style.display = "block";
 }
 
+//Gets called whenever the user closes the popup
 function closePopup(){
     //Close the popup
     var portfolioPopupDOM = document.getElementById("PortfolioPopup");
