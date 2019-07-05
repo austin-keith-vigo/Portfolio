@@ -66,6 +66,25 @@ body{
 .DivWith2OverlappingElements{
     position: relative;
 }
+
+.Popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.PopupContent{
+    width: 1000px;
+    height: 450px;
+    background: #bbb;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid #fff;
+}
+
 /*--------------------------------------------------*/
 /* Big Name Banner */
 /*--------------------------------------------------*/
@@ -239,6 +258,11 @@ body{
 .GridItemContainer img{
     width: 300px;
     height: auto;
+}
+
+#PortfolioPopupWrap{
+    max-width: 1000px;
+    min-width: 1000px;
 }
 
 

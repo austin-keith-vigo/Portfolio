@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript" src="PortfolioData/portfolioDataObjects.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
        (function(){
@@ -245,13 +246,25 @@
             <div class="TitleBox" id="PortfolioTitleBox">
                 <h1 class="SectionTitle" id="PortfolioTitle">PORTFOLIO</h1>
             </div>
+            
+            <div class="Wrap" id="PortfolioPopupWrap"> 
+                <div id="PortfolioPopup" class="Popup">
+                    <div class="PopupContent">
+                        <button class="CloseButton" onclick="closePopup()">CLOSE</button>
+                        <h1 id="ProjectTitle">ProjectTitle</h1>
+                        <h2 id="ProjectDates">ProjectDates</h2>
+                        <p id="ProjectSummary">ProjectSummary</p>
+                    </div>
+
+
+                </div>
+            </div>
+            
             <div class="GridContainer" id="PortfolioGrid">
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png"></a></div>
+                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(0)"></a></div>
+                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(1)"></a></div>
+                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(2)"></a></div>
+                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(3)"></a></div>
             </div>
         </div>
     </section>
