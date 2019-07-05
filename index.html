@@ -47,7 +47,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
    <header class="Title" style="background-image: url(images/BG.png)">
         <div class="AnimatingBars" id="LeftAnimatingBars">
             <div class="AnimatingBar" id="LeftBar0">
@@ -306,15 +306,14 @@
     <!--***************************
     *Nav Bar
     ****************************-->
-    <nav class="NavBar">
-        <div class="Wrap">
+    <nav class="NavBar" id="NavBarDiv" onmouseover="extendNavBar()" onmouseout="closeNavBar()">     
+            <img src="images/BARS.png" id="NavBarButton" >
             <ul class="NavBarList">
                 <a href="#AboutMeAnchor" class="NavBarLink">ABOUT ME</a>
                 <a href="#SkillsAnchor" class="NavBarLink">SKILLS</a>
                 <a href="#PortfolioAnchor" class="NavBarLink">PORTFOLIO</a>
                 <a href="#ContactMeAnchor" class="NavBarLink">CONTACT ME</a>
-            </ul>           
-        </div>
+            </ul>  
 
     </nav>
 </body>
