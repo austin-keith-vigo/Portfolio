@@ -54,3 +54,18 @@ function getBarsData(){
         rightColoBarDOM.style.backgroundColor = bars[barIndex].color;
    }
 }
+
+/*-------------------------------------------
+/* ALL THE FUNCTIONALITY BEHIND THE Popup */
+/*-------------------------------------------*/
+function openPopup(imageIndex){
+    //Open the popup
+    var portfolioPopupDOM = document.getElementById("PortfolioPopup");
+    portfolioPopupDOM.style.display = "block";
+}
+
+function closePopup(){
+    //Close the popup
+    var portfolioPopupDOM = document.getElementById("PortfolioPopup");
+    portfolioPopupDOM.style.display = "none";
+}

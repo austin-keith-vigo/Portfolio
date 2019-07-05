@@ -66,6 +66,25 @@ body{
 .DivWith2OverlappingElements{
     position: relative;
 }
+
+.Popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.PopupContent{
+    width: 75%;
+    height: 75%;
+    background: #bbb;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid #fff;
+}
+
 /*--------------------------------------------------*/
 /* Big Name Banner */
 /*--------------------------------------------------*/
