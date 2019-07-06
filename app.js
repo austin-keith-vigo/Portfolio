@@ -9,15 +9,25 @@ var skillBars = [];
 
 //Function called to set the width of each skill bar
 function setSkillBarWidth(barID, percentage){
+
+    //Calculate and set the width
     var barDOM = document.getElementById(barID);
     var width = 393 * percentage;
     width = width.toString() + "px";
     barDOM.style.width = width;
     
+    //Push the new bar
     if(!skillBars.includes(barID)){
         var newBar = new SkillBar(width, "#8BB990", barID);
         skillBars.push(newBar);
     }
+    
+    //Set the color of the inner bar
+    var skillBarsIndex = barID.charAt(barID.length - 1);
+    var barMeterDOM = document.getElementById("SkillBarMeter" + skillBarsIndex.toString());
+    barMeterDOM.style.backgroundColor = skillBars[skillBarsIndex].color;
+    
+
 }
 /*-------------------------------------------
 /* ALL THE FUNCTIONALITY BEHIND THE ANIMATING BARS */
