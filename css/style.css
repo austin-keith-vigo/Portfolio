@@ -219,9 +219,30 @@ body{
     height: 25px;
     margin-left: 4px;
 }
+.SkillBarMeter{
+    height: 100%;
+    background-color: antiquewhite;
+    animation-name: IncreaseWidth;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    
+}
+
+@keyframes IncreaseWidth{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 .SkillName{
     text-align: left;
 }
+
+
 .SkillName h1{
     color: white;
     padding-left: 1px;
