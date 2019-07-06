@@ -1,3 +1,24 @@
+class SkillBar{
+    constructor(width, color, id){
+        this.width = width;
+        this.color = color;
+        this.id = id;
+    }
+}
+var skillBars = [];
+
+//Function called to set the width of each skill bar
+function setSkillBarWidth(barID, percentage){
+    var barDOM = document.getElementById(barID);
+    var width = 393 * percentage;
+    width = width.toString() + "px";
+    barDOM.style.width = width;
+    
+    if(!skillBars.includes(barID)){
+        var newBar = new SkillBar(width, "#8BB990", barID);
+        skillBars.push(newBar);
+    }
+}
 /*-------------------------------------------
 /* ALL THE FUNCTIONALITY BEHIND THE ANIMATING BARS */
 /*-------------------------------------------*/
