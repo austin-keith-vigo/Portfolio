@@ -14,7 +14,7 @@ function setSkillBarWidth(barID, percentage){
     var barDOM = document.getElementById(barID);
     var width = 393 * percentage;
     width = width.toString() + "px";
-    barDOM.style.width = width;
+//    barDOM.style.width = width;
     
     //Push the new bar
     if(!skillBars.includes(barID)){
@@ -33,7 +33,7 @@ function setSkillBarWidth(barID, percentage){
 /* ALL THE FUNCTIONALITY BEHIND THE ANIMATING BARS */
 /*-------------------------------------------*/
 class Bar {
-    constructor(height, margin, color) {
+    constructor(height, margin, color, width) {
         this.height = height;
         this.color = color;
         this.margin = margin;
@@ -164,4 +164,45 @@ function closeNavBar(){
     navBarDOM.style.width = "40px";
     
     
+}
+
+/*-------------------------------------------
+/* ALL THE FUNCTIONALITY BEHIND THE animating on scroll */
+/*-------------------------------------------*/
+function setWaypoint(id, animateFunction){
+    var waypoint = new Waypoint({
+        element: $(id),
+        handler: animateFunction
+    });
+}
+
+function openBanner(){
+    var $banner = $(".Banner");
+    $banner.animate({
+        width: "50%" 
+    });
+}
+
+function closeBanner(){
+    var $banner = $(".Banner");
+    $banner.animate({
+        width: "100%" 
+    });
+}
+
+var $skillBars = [];
+
+function getAllSkillBars(){
+    $(".SkillBarMeter").each(function() {
+        $skillBars.push(this);
+    });
+}
+
+function fillSkillBars(){
+    $(".SkillBarMeter").each(function() {
+        $(this).animate({
+            width: "0%"
+        });
+    });
+    console.log("Done");
 }

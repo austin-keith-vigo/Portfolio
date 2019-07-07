@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript" src="PortfolioData/portfolioDataObjects.js"></script>
+    <script type="text/javascript" src="external-js-files/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="external-js-files/jquery.waypoints.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
        (function(){
@@ -135,25 +137,34 @@
     ****************************-->
     <a class="Anchor" name="AboutMeAnchor"></a>
     <section class="Section" id="AboutMe">
-       <div class="Wrap"  id="AboutMeWrap"> 
-            <div class="TitleBox" id="AboutMeTitleBox">
-                <h1 class="SectionTitle" id="AboutMeTitle">ABOUT ME</h1>
+        <script>
+            var waypoint = new Waypoint({
+                element: $("#AboutMe"),
+                handler: function(direction) {
+                    openBanner();
+                }
+            });
+//            setWaypoint("#AboutMe", openBanner);
+        </script>
+        <div class="TitleBox" id="AboutMeTitleBox">
+            <h1 class="SectionTitle" id="AboutMeTitle">ABOUT ME</h1>
+        </div>
+        <div class="BannerContainer">
+            <div class="HalfBannerContainer" id="Left">
+                
             </div>
-            <div class="sideBySideBoxesContainer" id="AboutMeSideBySideBoxesContainer">
-                <div class="leftHalfScreenBox" id="SelfPortraitBox">
-                    <img src="images/linkedin.png" id="SelfPortrait">
-                </div>
-                <div class="rightHalfScreenBox" id="AboutMeParagraphBox">
-                    <p id="AboutMeParagraph">
-                       I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
-                       <br>
-                       <br>
-                       Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
-                    </p>
-                </div>
-                <div class="BannerOverlay" id="AboutMeBannerOverlay"></div>
+            <div class="HalfBannerContainer" id="Right">
+                <p id="AboutMeParagraph">
+                   I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
+                   <br>
+                   <br>
+                   Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
+                </p>
             </div>
-       </div>
+            <div class="Banner">
+                
+            </div>
+        </div>
     </section>
 
     <!--***************************
@@ -161,6 +172,16 @@
     ****************************-->
     <a class="Anchor" name="SkillsAnchor"></a>
     <section class="Section" id="Skills">
+        <script>
+            var waypoint = new Waypoint({
+                element: $("#Skills"),
+                handler: function(direction) {
+                    closeBanner();
+                    fillSkillBars();
+                }
+            });
+        </script>
+
         <div class="Wrap" id="SkillsWrap">
             <div class="TitleBox" id="SkillsTitleBox">
                 <h1 class="SectionTitle" id="SkillsTitle">SKILLS</h1>
@@ -253,6 +274,7 @@
                         <script>setSkillBarWidth("SkillBar9",.6);</script>
                     </div>
                 </div>
+                <script>getAllSkillBars();</script>
             </div>
         </div>
     </section>

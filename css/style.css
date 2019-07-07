@@ -150,11 +150,13 @@ body{
 /*--------------------------------------------------*/
 #AboutMe {
 }
+/*
 #SelfPortrait {
     width: 300px;
     max-width: 640px;
     height: auto;
 }
+*/
 
 #AboutMeParagraph{
     font-family: "Josefin sans";
@@ -165,6 +167,7 @@ body{
 #AboutMeParagraphBox {
     
 }
+/*
 #SelfPortraitBox {
     text-align: center;
     margin-top: auto;
@@ -189,6 +192,32 @@ body{
 #AboutMeSideBySideBoxesContainer:hover #AboutMeBannerOverlay{
     width: 640px;
 }
+*/
+
+.BannerContainer{
+    height: 500px;
+    width: 100vw;
+    position: relative;
+    
+}
+.HalfBannerContainer{
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+#Left{
+    background-color: black
+}
+.Banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
 /*--------------------------------------------------*/
 /* Skills */
 /*--------------------------------------------------*/
