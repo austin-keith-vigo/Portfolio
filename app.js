@@ -14,7 +14,7 @@ function setSkillBarWidth(barID, percentage){
     var barDOM = document.getElementById(barID);
     var width = 393 * percentage;
     width = width.toString() + "px";
-//    barDOM.style.width = width;
+    barDOM.style.width = "0px";
     
     //Push the new bar
     if(!skillBars.includes(barID)){
@@ -188,21 +188,4 @@ function closeBanner(){
     $banner.animate({
         width: "100%" 
     });
-}
-
-var $skillBars = [];
-
-function getAllSkillBars(){
-    $(".SkillBarMeter").each(function() {
-        $skillBars.push(this);
-    });
-}
-
-function fillSkillBars(){
-    $(".SkillBarMeter").each(function() {
-        $(this).animate({
-            width: "0%"
-        });
-    });
-    console.log("Done");
 }
