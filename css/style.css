@@ -150,11 +150,13 @@ body{
 /*--------------------------------------------------*/
 #AboutMe {
 }
+/*
 #SelfPortrait {
     width: 300px;
     max-width: 640px;
     height: auto;
 }
+*/
 
 #AboutMeParagraph{
     font-family: "Josefin sans";
@@ -162,6 +164,15 @@ body{
     line-height: 1.5;
     margin: 30px;
 }
+#SelfPortraightBanner{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*
 #AboutMeParagraphBox {
     
 }
@@ -170,7 +181,9 @@ body{
     margin-top: auto;
     margin-bottom: auto;
 }
+*/
 
+/*
 #AboutMeSideBySideBoxesContainer{
     position: relative;
     height: 500px;
@@ -188,6 +201,23 @@ body{
 
 #AboutMeSideBySideBoxesContainer:hover #AboutMeBannerOverlay{
     width: 640px;
+}
+*/
+.HalfHalfContainer{
+    height: 500px;
+    width: 100vw;
+    position: relative;
+}
+.HalfContainer{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+#Left{
+    background-color: black;
+}
+#Right{
+    max-width: 640px;
 }
 /*--------------------------------------------------*/
 /* Skills */
