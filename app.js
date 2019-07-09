@@ -26,8 +26,14 @@ function setSkillBarWidth(barID, percentage){
     var skillBarsIndex = barID.charAt(barID.length - 1);
     var barMeterDOM = document.getElementById("SkillBarMeter" + skillBarsIndex.toString());
     barMeterDOM.style.backgroundColor = skillBars[skillBarsIndex].color;
-    
+}
 
+function activateSkillBarAnimation(){
+    for(index = 0; index < skillBars.length; ++index){
+        var skillBarMeterId = "SkillBarMeter" + index.toString();
+        var skillBarMeterDOM = document.getElementById(skillBarMeterId);
+        skillBarMeterDOM.style.animationPlayState = "running";
+    }
 }
 /*-------------------------------------------
 /* ALL THE FUNCTIONALITY BEHIND THE ANIMATING BARS */
@@ -161,7 +167,5 @@ function closeNavBar(){
     //Close the navbar
     var navBarDOM = document.getElementById("NavBarDiv");
     navBarDOM.style.backgroundColor = "rgba(0,0,0,0)";
-    navBarDOM.style.width = "40px";
-    
-    
+    navBarDOM.style.width = "40px";   
 }
