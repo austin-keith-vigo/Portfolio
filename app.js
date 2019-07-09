@@ -32,6 +32,7 @@ function activateSkillBarAnimation(){
     for(index = 0; index < skillBars.length; ++index){
         var skillBarMeterId = "SkillBarMeter" + index.toString();
         var skillBarMeterDOM = document.getElementById(skillBarMeterId);
+        skillBarMeterDOM.style.animationName = "IncreaseWidth";
         skillBarMeterDOM.style.animationPlayState = "running";
     }
 }

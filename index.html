@@ -161,18 +161,17 @@
     <!--***************************
     *Skills section
     ****************************-->
+    <a class="Waypoint" id="SkillsWaypoint"></a>
+    <script>
+        var waypoint = new Waypoint({
+        element: document.getElementById('SkillsWaypoint'),
+        handler: function(direction) {
+            activateSkillBarAnimation();
+        },
+        })
+    </script>
     <a class="Anchor" name="SkillsAnchor"></a>
     <section class="Section" id="Skills">
-        <script>
-            var waypoint = new Waypoint({
-            element: document.getElementById('Skills'),
-            handler: function(direction) {
-                activateSkillBarAnimation();
-            },
-            offset: 400
-            })
-            
-        </script>
         <div class="Wrap" id="SkillsWrap">
             <div class="TitleBox" id="SkillsTitleBox">
                 <h1 class="SectionTitle" id="SkillsTitle">SKILLS</h1>
@@ -339,7 +338,7 @@
             <img src="images/BARS.png" id="NavBarButton" >
             <ul class="NavBarList">
                 <a href="#AboutMeAnchor" class="NavBarLink">ABOUT ME</a>
-                <a href="#SkillsAnchor" class="NavBarLink">SKILLS</a>
+                <a href="#SkillsAnchor" class="NavBarLink" onclick="activateSkillBarAnimation();">SKILLS</a>
                 <a href="#PortfolioAnchor" class="NavBarLink">PORTFOLIO</a>
                 <a href="#ContactMeAnchor" class="NavBarLink">CONTACT ME</a>
             </ul>  
