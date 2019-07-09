@@ -135,6 +135,16 @@
     <!--***************************
     *About Me section
     ****************************-->
+    <a class="Waypoint" id="AboutMeWaypoint"></a>
+    <script>
+        var waypoint = new Waypoint({
+        element: document.getElementById('AboutMeWaypoint'),
+        handler: function(direction) {
+            openBanner(direction);
+        },
+            offset: 200
+        })
+    </script>
     <a class="Anchor" name="AboutMeAnchor"></a>
     <section class="Section" id="AboutMe">
 <!--
@@ -172,9 +182,7 @@
                    Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
                 </p>
             </div>
-            <div id="SelfPortraightBanner">
-                
-            </div>
+            <div id="SelfPortraightBanner"></div>
         </div>
     </section>
 
@@ -188,6 +196,7 @@
         handler: function(direction) {
             activateSkillBarAnimation();
         },
+        offset: 200
         })
     </script>
     <a class="Anchor" name="SkillsAnchor"></a>
