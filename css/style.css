@@ -94,6 +94,7 @@ body{
     width: 100vw;
     min-width: 1280px;
     background-size: cover;
+    position: relative
 }
 
 .AnimatingBars{
@@ -134,7 +135,7 @@ body{
 .NameTitle{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 0%;
     transform: translate(-50%,-50%);
 }
 
@@ -172,37 +173,7 @@ body{
     left: 0;
     top: 0;
 }
-/*
-#AboutMeParagraphBox {
-    
-}
-#SelfPortraitBox {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-*/
 
-/*
-#AboutMeSideBySideBoxesContainer{
-    position: relative;
-    height: 500px;
-}
-#AboutMeBannerOverlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: 1s; 
-    background-color: black;
-}
-
-#AboutMeSideBySideBoxesContainer:hover #AboutMeBannerOverlay{
-    width: 640px;
-}
-*/
 .HalfHalfContainer{
     height: 500px;
     width: 100vw;
