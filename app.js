@@ -170,3 +170,18 @@ function closeNavBar(){
     navBarDOM.style.backgroundColor = "rgba(0,0,0,0)";
     navBarDOM.style.width = "40px";   
 }
+
+/*-------------------------------------------
+/* Banner animations */
+/*-------------------------------------------*/
+function openBanner(direction){
+    //Check to see the user is scrolling from the top
+    if (direction.toString() == "down"){
+        var $banner = $("#SelfPortraightBanner");
+        $banner.animate({
+           width: "50%" 
+        },{
+            duration: 1500
+        });
+    }
+}
