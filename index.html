@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript" src="PortfolioData/portfolioDataObjects.js"></script>
+    <script type="text/javascript" src="external-js-files/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="external-js-files/jquery.waypoints.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
        (function(){
@@ -159,6 +161,15 @@
     <!--***************************
     *Skills section
     ****************************-->
+    <a class="Waypoint" id="SkillsWaypoint"></a>
+    <script>
+        var waypoint = new Waypoint({
+        element: document.getElementById('SkillsWaypoint'),
+        handler: function(direction) {
+            activateSkillBarAnimation();
+        },
+        })
+    </script>
     <a class="Anchor" name="SkillsAnchor"></a>
     <section class="Section" id="Skills">
         <div class="Wrap" id="SkillsWrap">
@@ -327,7 +338,7 @@
             <img src="images/BARS.png" id="NavBarButton" >
             <ul class="NavBarList">
                 <a href="#AboutMeAnchor" class="NavBarLink">ABOUT ME</a>
-                <a href="#SkillsAnchor" class="NavBarLink">SKILLS</a>
+                <a href="#SkillsAnchor" class="NavBarLink" onclick="activateSkillBarAnimation();">SKILLS</a>
                 <a href="#PortfolioAnchor" class="NavBarLink">PORTFOLIO</a>
                 <a href="#ContactMeAnchor" class="NavBarLink">CONTACT ME</a>
             </ul>  
