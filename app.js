@@ -185,3 +185,16 @@ function openBanner(direction){
         });
     }
 }
+
+/*-------------------------------------------
+/* NameTitle animations */
+/*-------------------------------------------*/
+function slideNameTitleDown(){
+    console.log("HERE");
+    var $nameTitle = $(".NameTitle");
+    $nameTitle.animate({
+       top: "50%" 
+    },{
+        duration: 1700
+    });
+}
