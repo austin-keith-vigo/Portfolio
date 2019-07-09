@@ -179,7 +179,7 @@ function openBanner(direction){
     if (direction.toString() == "down"){
         var $banner = $("#SelfPortraightBanner");
         $banner.animate({
-           width: "50%" 
+           left: "-50%" 
         },{
             duration: 1500
         });
