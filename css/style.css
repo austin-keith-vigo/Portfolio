@@ -76,6 +76,7 @@ body{
     background: rgba(0,0,0,0.6);
     display: none;
 }
+
 .PopupContent{
     width: 1000px;
     height: 450px;
@@ -83,6 +84,36 @@ body{
     margin: 100px auto;
     position: relative;
     border: 5px solid #fff;
+}
+
+.PopupTitleDatesContainer{
+    height: 70px;
+    width: 100%;
+}
+
+.PopupImageSummaryContainer{
+    width: 100%;
+    height: 380px;
+}
+
+#ProjectTitle{
+    font-size: 35px;
+}
+
+#ProjectDates{
+    font-size: 20px;
+}
+
+#PopupCloseButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#ProjectImage{
+    height: 80%;
+    width: auto;
+    margin: auto auto;
 }
 
 /*--------------------------------------------------*/
