@@ -97,21 +97,23 @@ function getBarsData(){
 /* ALL THE FUNCTIONALITY BEHIND THE Popup */
 /*-------------------------------------------*/
 class Popup {
-    constructor(title, dates, summary) {
+    constructor(title, dates, summary, imageFilePath) {
         this.title = title;
         this.dates = dates;
         this.summary = summary;
+        this.imageFilePath = imageFilePath;
     }
     
-    newPopupData(title, dates, summary){
+    newPopupData(title, dates, summary, imageFilePath){
         this.title = title;
         this.dates = dates;
         this.summary = summary;
+        this.imageFilePath = imageFilePath;
     }
 }
 
 //The model for the popup
-var popup = new Popup("","","");
+var popup = new Popup("","","","");
 
 //Gets called whenever the user wants to open a popup
 function openPopup(imageIndex){
@@ -120,15 +122,28 @@ function openPopup(imageIndex){
     let newTitle = dataObjects[imageIndex].title;
     let newDates = dataObjects[imageIndex].date;
     let newSummary = dataObjects[imageIndex].projectSummary;
-    popup.newPopupData(newTitle, newDates, newSummary);
+    let newImageFilePath = "";
+    
+    //Check if the portfolio entry has images
+    if (dataObjects[imageIndex].imageFilepaths.length != 0){
+        newImageFilePath = dataObjects[imageIndex].imageFilepaths[0];
+    }
+    else{
+        newImageFilePath = "images/linkedin.png";
+    }
+    popup.newPopupData(newTitle, newDates, newSummary, newImageFilePath);
+
     
     //Update the View with the new data
     var projectTitleDOM = document.getElementById("ProjectTitle");
     var projectDatesDOM = document.getElementById("ProjectDates");
     var projectSummaryDOM = document.getElementById("ProjectSummary");
+    var projectImageDOM = document.getElementById("ProjectImage");
+    
     projectTitleDOM.innerHTML = newTitle;
     projectDatesDOM.innerHTML = newDates;
     projectSummaryDOM.innerHTML = newSummary;
+    projectImageDOM.src = newImageFilePath;
     
     //Open the popup
     var portfolioPopupDOM = document.getElementById("PortfolioPopup");

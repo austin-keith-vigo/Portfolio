@@ -69,20 +69,61 @@ body{
 
 .Popup{
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.6);
     display: none;
 }
+
 .PopupContent{
     width: 1000px;
-    height: 450px;
+    height: 600px;
     background: #bbb;
-    margin: 100px auto;
+    margin: 10px auto;
     position: relative;
     border: 5px solid #fff;
+}
+
+.PopupTitleDatesContainer{
+    height: 70px;
+    width: 1000px;
+}
+
+.PopupImageSummaryContainer{
+    width: 1000px;
+    height: 530px;
+}
+
+#ProjectTitle{
+    font-size: 35px;
+}
+
+#ProjectDates{
+    font-size: 20px;
+}
+
+#PopupCloseButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#ProjectImage{
+    max-width: 450px;
+    max-height: 450px;
+    height: 80%;
+    width: auto;
+}
+
+#ProjectSummary{
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Josefin sans";
+    
 }
 
 /*--------------------------------------------------*/
@@ -286,6 +327,7 @@ body{
     max-width: 1000px;
     min-width: 1000px;
 }
+
 
 
 /*--------------------------------------------------*/

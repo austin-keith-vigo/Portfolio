@@ -282,7 +282,7 @@
     *Portfolio section
     ****************************-->
     <a class="Anchor" name="PortfolioAnchor"></a>
-    <section class="Section" id="Portfolio">
+    <section  id="Portfolio">
         <div class="Wrap" id="PortfolioWrap">
             <div class="TitleBox" id="PortfolioTitleBox">
                 <h1 class="SectionTitle" id="PortfolioTitle">PORTFOLIO</h1>
@@ -291,13 +291,22 @@
             <div class="Wrap" id="PortfolioPopupWrap"> 
                 <div id="PortfolioPopup" class="Popup">
                     <div class="PopupContent">
-                        <button class="CloseButton" onclick="closePopup()">CLOSE</button>
-                        <h1 id="ProjectTitle">ProjectTitle</h1>
-                        <h2 id="ProjectDates">ProjectDates</h2>
-                        <p id="ProjectSummary">ProjectSummary</p>
+                        <button id="PopupCloseButton" onclick="closePopup()">CLOSE</button>
+                        <div class="PopupTitleDatesContainer">
+                            <h1 id="ProjectTitle">ProjectTitle</h1>
+                            <h2 id="ProjectDates">ProjectDates</h2>
+                        </div>
+                        <div class="PopupImageSummaryContainer">
+                            <div class="HalfContainer">
+                                <img id="ProjectImage" src="images/linkedin.png">
+                            </div>
+                            <div class="HalfContainer">
+                                <p id="ProjectSummary">ProjectSummary</p>
+                            </div>
+                            
+                            
+                        </div>
                     </div>
-
-
                 </div>
             </div>
             
