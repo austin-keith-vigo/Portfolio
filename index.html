@@ -2,13 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="title-section/title.css">
     <script type="text/javascript" src="external-js-files/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="external-js-files/jquery.waypoints.js"></script>
-    <script type="text/javascript" src="title-section/title.js"></script>
+    
 </head>
 <body>
     <header class="title">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="title-section/title.css">
+        <script type="text/javascript" src="title-section/title.js"></script>
         <div class="title-animating-bars-container" id="left-title-animating-bars-container">
             <div class="title-animating-bar-box" id="left-animating-bar-box-0"></div>
             <div class="title-animating-bar-box" id="left-animating-bar-box-1"></div>
@@ -44,7 +46,9 @@
             animateTitleNameBannerDown();
         </script>
     </header>
-    <div class="buffer" id="title-animation-waypoint"></div>
+    <div class="about-me" id="title-animation-waypoint">
+        <link rel="stylesheet" type="text/css" href="about-me-section/about-me.css">
+        <script type="text/javascript" src="about-me-section/about-me.js"></script>
         <script>
             var waypoint = new Waypoint({
                 element: document.getElementById('title-animation-waypoint'),
@@ -60,6 +64,17 @@
                 },
             })
         </script>
-    <div class="buffer"></div>
+            <div class="about-me-buffer-container"></div>
+            <div class="about-me-paragraph-box">
+                <p>
+                   I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
+                   <br>
+                   <br>
+                   Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
+                </p>
+            </div>  
+<!--            <div class="self-portrait-banner"></div>-->
+        </div>
+<!--        <button onclick="openBanner();">pressme</button>-->
 </body>
 </html>

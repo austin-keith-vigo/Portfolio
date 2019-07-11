@@ -1,0 +1,38 @@
+.about-me{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.about-me-buffer-container{
+    height: 100%;
+    width: 50%;
+    float: left;
+
+    background-color: black;
+}
+
+.about-me-paragraph-box {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 20px 20px;
+}
+
+.about-me-paragraph-box p{
+    font-size: 25px;
+    font-family: "Josefin sans";
+    line-height: 30px;
+}
+
+.self-portrait-banner{
+    height: 100%;
+    width: 100%;
+    
+    background-color: blue;
+    
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    
+}
