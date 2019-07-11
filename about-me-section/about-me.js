@@ -6,3 +6,8 @@ function openBanner(){
         duration: 1000
     });
 }
+
+function closeBanner(){
+    $banner = $(".self-portrait-banner");
+    $banner.css("left","0%");
+}

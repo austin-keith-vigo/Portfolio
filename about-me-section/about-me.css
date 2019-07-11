@@ -16,10 +16,13 @@
     height: 100%;
     width: 50%;
     float: left;
-    padding: 20px 20px;
 }
 
 .about-me-paragraph-box p{
+    width: 500px;
+    height: auto;
+    margin: 40px;
+    
     font-size: 25px;
     font-family: "Josefin sans";
     line-height: 30px;
@@ -34,5 +37,4 @@
     position: absolute;
     top: 0%;
     left: 0%;
-    
 }
