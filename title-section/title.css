@@ -1,0 +1,41 @@
+/*--------------------------------*/
+/* CSS File for Title elements */
+/*--------------------------------*/
+.title{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+    background-image: url(images/BG.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-animating-bars-container{
+    height: 500px;
+    display: inline-block;
+}
+
+.title-animating-bar-box{
+    width: 12px;
+    background-color: aqua;
+    display: inline-block;
+    float: left;
+}
+
+#right-title-animating-bars-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.title-name-banner {
+    width: 800px;
+    height: auto;
+    
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+
+}
