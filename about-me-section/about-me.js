@@ -9,5 +9,10 @@ function openBanner(){
 
 function closeBanner(){
     $banner = $(".self-portrait-banner");
-    $banner.css("left","0%");
+    $banner.animate({
+        left: "0%"
+    },{
+        duration: 10
+    });
+    
 }
