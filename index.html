@@ -76,21 +76,127 @@
             </div>  
             <div class="self-portrait-banner"></div>
         </div>
-        <div class="buffer" id="about-me-animation-waypoint">
-        <script>
-            var waypoint = new Waypoint({
-                element: document.getElementById("about-me-animation-waypoint"),
-                handler: function(direction) {
-                    if (direction =="up"){
-                        openBanner();
-                    }
-                    else{
-                        closeBanner();
-                    }
-                },
-            })
-        </script>
+        <div class="skills" id="about-me-animation-waypoint">
+            <link rel="stylesheet" type="text/css" href="skills-section/skills.css">
+            <script type="text/javascript" src="skills-section/skills.js"></script>
+            <script>
+                var waypoint = new Waypoint({
+                    element: document.getElementById("about-me-animation-waypoint"),
+                    handler: function(direction) {
+                        if (direction =="up"){
+                            openBanner();
+                        }
+                        else{
+                            closeBanner();
+                        }
+                    },
+                })
+            </script>
+            <div class= "soft-skills-container">
+                <div class= "soft-skills-images-container">
+                    
+                </div>
+                
+            </div>
+            <div class="technical-skills-container">
+                <div class="skill-bars-container">
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-0">
+                            <h1 id=skill-name-0></h1>
+                            <script>
+                                getRatingBarData(0,.80,"Swift");
+                                fillRatingBar(0);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-1">
+                            <h1 id=skill-name-1></h1>
+                            <script>
+                                getRatingBarData(1,.80,"Python");
+                                fillRatingBar(1);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-2">
+                            <h1 id=skill-name-2></h1>
+                            <script>
+                                getRatingBarData(2,.75,"C++");
+                                fillRatingBar(2);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-3">
+                            <h1 id=skill-name-3></h1>
+                            <script>
+                                getRatingBarData(3,.5,"HTML");
+                                fillRatingBar(3);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-4">
+                            <h1 id=skill-name-4></h1>
+                            <script>
+                                getRatingBarData(4,.5,"CSS");
+                                fillRatingBar(4);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-5">
+                            <h1 id=skill-name-5></h1>
+                            <script>
+                                getRatingBarData(5,.5,"Javascript");
+                                fillRatingBar(5);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-6">
+                            <h1 id=skill-name-6></h1>
+                            <script>
+                                getRatingBarData(6,.3,"Unity");
+                                fillRatingBar(6);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-7">
+                            <h1 id=skill-name-7></h1>
+                            <script>
+                                getRatingBarData(7,.3,"C#");
+                                fillRatingBar(7);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-8">
+                            <h1 id=skill-name-8></h1>
+                            <script>
+                                getRatingBarData(8,.25,"Java");
+                                fillRatingBar(8);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-9">
+                            <h1 id=skill-name-9></h1>
+                            <script>
+                                getRatingBarData(9,.6,"Firebase");
+                                fillRatingBar(9);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
-        <div class="buffer"></div>
+        <div class="portfolio" id="portfolio-animation-waypoint">
+            <link rel="stylesheet" type="text/css" href="portfolio-section/portfolio.css">
+            <script type="text/javascript" src="portfolio-section/portfolio-data-objects.js"></script>
+            <script type="text/javascript" src="portfolio-section/portfolio.js"></script>
+        </div>
 </body>
 </html>
