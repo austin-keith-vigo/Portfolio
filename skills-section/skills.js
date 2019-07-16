@@ -28,3 +28,9 @@ function fillRatingBar(index){
     });
 }
 
+function fillAllRatingBars(){
+    for(ratingBarIndex = 0; ratingBarIndex < ratingBars.length; ratingBarIndex++) {
+        fillRatingBar(ratingBarIndex);
+    }
+}
+
