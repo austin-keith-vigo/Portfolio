@@ -1,367 +1,192 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-    <title>Austin Vigo - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript" src="PortfolioData/portfolioDataObjects.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="external-js-files/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="external-js-files/jquery.waypoints.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_kvvHWNGssO4BwyyV8qWFe");
-       })();
-    </script>
-    <script>
-        function clearUserEmailTextField(){
-            var userEmailTextFieldDOM = document.getElementById("UserEmailTextField");
-            userEmailTextFieldDOM.value = "";
-            userEmailTextFieldDOM.style.color = "black";
-        }
-        function clearUserTextBody(){
-            var userTextBodyDom = document.getElementById("UserTextBody");
-            userTextBodyDom.value = "";
-            userTextBodyDom.style.color = "black";
-        }
-        
-        function sendEmail(senderText, bodyText){
-            var userEmail = document.getElementById("UserEmailTextField").value;
-            var emailBody = document.getElementById("UserTextBody").value;
-            
-            var template_params = {
-           "subject": userEmail,
-           "body": emailBody
-            }
-            
-            clearUserEmailTextField();
-            clearUserTextBody();
-            
-            var service_id = "default_service";
-            var template_id = "contact_form";
-            emailjs.send(service_id, template_id, template_params);
-        }
-    </script>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="external-css-files/Grid.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
 </head>
-
-<body id="body">
-   <header class="Title" style="background-image: url(images/BG.png)">
-        <div class="AnimatingBars" id="LeftAnimatingBars">
-            <div class="AnimatingBar" id="LeftBar0">
-                <div class="ColorBar" id="LeftColorBar0"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar1">
-                <div class="ColorBar" id="LeftColorBar1"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar2">
-                <div class="ColorBar" id="LeftColorBar2"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar3">
-                <div class="ColorBar" id="LeftColorBar3"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar4">
-                <div class="ColorBar" id="LeftColorBar4"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar5">
-                <div class="ColorBar" id="LeftColorBar5"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar6">
-                <div class="ColorBar" id="LeftColorBar6"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar7">
-                <div class="ColorBar" id="LeftColorBar7"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar8">
-                <div class="ColorBar" id="LeftColorBar8"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar9">
-                <div class="ColorBar" id="LeftColorBar9"></div>
-            </div>
-            <div class="AnimatingBar" id="LeftBar10">
-                <div class="ColorBar" id="LeftColorBar10"></div>
-            </div>
-       </div>
-       
-        <div class="AnimatingBars" id="RightAnimatingBars">
-            <div class="AnimatingBar" id="RightBar0">
-                <div class="ColorBar" id="RightColorBar0"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar1">
-                <div class="ColorBar" id="RightColorBar1"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar2">
-                <div class="ColorBar" id="RightColorBar2"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar3">
-                <div class="ColorBar" id="RightColorBar3"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar4">
-                <div class="ColorBar" id="RightColorBar4"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar5">
-                <div class="ColorBar" id="RightColorBar5"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar6">
-                <div class="ColorBar" id="RightColorBar6"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar7">
-                <div class="ColorBar" id="RightColorBar7"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar8">
-                <div class="ColorBar" id="RightColorBar8"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar9">
-                <div class="ColorBar" id="RightColorBar9"></div>
-            </div>
-            <div class="AnimatingBar" id="RightBar10">
-                <div class="ColorBar" id="RightColorBar10"></div>
-            </div>
-       </div>     
-
-        <div class="NameTitle">
-            <img src="images/BANNER.png">    
+<body>
+    <header class="title">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="title-section/title.css">
+        <script type="text/javascript" src="title-section/title.js"></script>
+        <div class="title-animating-bars-container" id="left-title-animating-bars-container">
+            <div class="title-animating-bar-box" id="left-animating-bar-box-0"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-1"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-2"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-3"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-4"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-5"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-6"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-7"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-8"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-9"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-10"></div>
+            <div class="title-animating-bar-box" id="left-animating-bar-box-11"></div>
         </div>
-       
-        <!--Randomize the height and the padding of each bar. Lastly set the bars animation-->
+        <div class="title-animating-bars-container" id="right-title-animating-bars-container">
+            <div class="title-animating-bar-box" id="right-animating-bar-box-0"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-1"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-2"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-3"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-4"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-5"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-6"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-7"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-8"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-9"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-10"></div>
+            <div class="title-animating-bar-box" id="right-animating-bar-box-11"></div>
+        </div>
+        <img class="title-name-banner" src="title-section/images/BANNER.png">
         <script>
             getBarsData();
-            slideNameTitleDown();
+            animateBarsDown();
+            animateTitleNameBannerDown();
         </script>
-   </header>
-    <!--***************************
-    *About Me section
-    ****************************-->
-    <a class="Waypoint" id="AboutMeWaypoint"></a>
-    <script>
-        var waypoint = new Waypoint({
-        element: document.getElementById('AboutMeWaypoint'),
-        handler: function(direction) {
-            openBanner(direction);
-        },
-            offset: 200
-        })
-    </script>
-    <a class="Anchor" name="AboutMeAnchor"></a>
-    <section class="Section" id="AboutMe">
-        <div class="TitleBox" id="AboutMeTitleBox">
-            <h1 class="SectionTitle" id="AboutMeTitle">ABOUT ME</h1>
-        </div>
-        <div class="HalfHalfContainer">
-            <div class="HalfContainer" id="Left">
-                
-            </div>
-            <div class="HalfContainer" id="Right">
-                <p id="AboutMeParagraph">
+    </header>
+    <div class="about-me" id="title-animation-waypoint">
+        <link rel="stylesheet" type="text/css" href="about-me-section/about-me.css">
+        <script type="text/javascript" src="about-me-section/about-me.js"></script>
+        <script>
+            var waypoint = new Waypoint({
+                element: document.getElementById('title-animation-waypoint'),
+                handler: function(direction) {
+                    if (direction =="up"){
+                        animateBarsDown();
+                        animateTitleNameBannerDown();
+                    }
+                    else{
+//                        resetBarHeight();
+//                        resetTitleNameBanner();
+                        openBanner();
+                    }
+                },
+            })
+        </script>
+            <div class="about-me-buffer-container"></div>
+            <div class="about-me-paragraph-box">
+                <p>
                    I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
                    <br>
                    <br>
                    Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
                 </p>
-            </div>
-            <div id="SelfPortraightBanner"></div>
+            </div>  
+            <div class="self-portrait-banner"></div>
         </div>
-    </section>
-
-    <!--***************************
-    *Skills section
-    ****************************-->
-    <a class="Waypoint" id="SkillsWaypoint"></a>
-    <script>
-        var waypoint = new Waypoint({
-        element: document.getElementById('SkillsWaypoint'),
-        handler: function(direction) {
-            activateSkillBarAnimation();
-        },
-        offset: 200
-        })
-    </script>
-    <a class="Anchor" name="SkillsAnchor"></a>
-    <section class="Section" id="Skills">
-        <div class="Wrap" id="SkillsWrap">
-            <div class="TitleBox" id="SkillsTitleBox">
-                <h1 class="SectionTitle" id="SkillsTitle">SKILLS</h1>
-            </div>
-            <div class="sideBySideBoxesContainer">
-                <div class="rightHalfScreenBox" id="SoftSkillsImageBox">
-                    <img src="images/linkedin.png" id="TechnicalSkillsImage">
+        <div class="skills" id="about-me-animation-waypoint">
+            <link rel="stylesheet" type="text/css" href="skills-section/skills.css">
+            <script type="text/javascript" src="skills-section/skills.js"></script>
+            <script>
+                var waypoint = new Waypoint({
+                    element: document.getElementById("about-me-animation-waypoint"),
+                    handler: function(direction) {
+                        if (direction =="up"){
+                            openBanner();
+                        }
+                        else{
+                            fillAllRatingBars();
+                        }
+                    },
+                })
+            </script>
+            <div class= "soft-skills-container">
+                <div class= "soft-skills-images-container">
+                    
                 </div>
-                <div class="leftHalfScreenBox" id="TechnicalSkillsImageBox">
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar0">
-                            <div class="SkillBarMeter" id="SkillBarMeter0">
-                                <h1 class="SkillName">SWIFT</h1>
-                            </div>
-                             
-                         </div>
-                        <script>setSkillBarWidth("SkillBar0",.8);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar1">
-                            <div class="SkillBarMeter" id="SkillBarMeter1">
-                                <h1 class="SkillName">PYTHON</h1>                               
-                            </div>
-                         </div>
-                        <script>setSkillBarWidth("SkillBar1",.8);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar2">
-                            <div class="SkillBarMeter" id="SkillBarMeter2">
-                                <h1 class="SkillName">C++</h1>    
-                             </div>
-                             
-                         </div>
-                        <script>setSkillBarWidth("SkillBar2",.75);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar3">
-                            <div class="SkillBarMeter" id="SkillBarMeter3">
-                                <h1 class="SkillName">HTML</h1>
-                            </div> 
-                         </div>
-                        <script>setSkillBarWidth("SkillBar3",.5);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar4">
-                            <div class="SkillBarMeter" id="SkillBarMeter4">
-                                <h1 class="SkillName">CSS</h1>
-                            </div>
-                         </div>
-                        <script>setSkillBarWidth("SkillBar4",.5);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar5">
-                            <div class="SkillBarMeter" id="SkillBarMeter5">
-                                <h1 class="SkillName">JAVASCRIPT</h1>
-                            </div>
-                         </div>
-                        <script>setSkillBarWidth("SkillBar5",.5);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar6">
-                            <div class="SkillBarMeter" id="SkillBarMeter6">
-                                <h1 class="SkillName">UNITY</h1>
-                            </div>
-                         </div>
-                        <script>setSkillBarWidth("SkillBar6",.3);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar7">
-                            <div class="SkillBarMeter" id="SkillBarMeter7">
-                                <h1 class="SkillName">C#</h1>
-                            </div>
-                         </div>
-                        <script>setSkillBarWidth("SkillBar7",.3);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar8">
-                            <div class="SkillBarMeter" id="SkillBarMeter8">
-                                <h1 class="SkillName">JAVA</h1>
-                            </div>
-                         </div>
-                        <script>setSkillBarWidth("SkillBar8",.25);</script>
-                    </div>
-                    <div class="SkillBarBox" style="background-image: url(images/SKILL_BAR.png)">
-                         <div class="SkillBar" id="SkillBar9">
-                            <div class="SkillBarMeter" id="SkillBarMeter9">
-                                <h1 class="SkillName">FIREBASE</h1>
-                            </div>
-                         </div>
-                        <script>setSkillBarWidth("SkillBar9",.6);</script>
-                    </div>
-                </div>
+                
             </div>
-        </div>
-    </section>
-    
-    <!--***************************
-    *Portfolio section
-    ****************************-->
-    <a class="Anchor" name="PortfolioAnchor"></a>
-    <section  id="Portfolio">
-        <div class="Wrap" id="PortfolioWrap">
-            <div class="TitleBox" id="PortfolioTitleBox">
-                <h1 class="SectionTitle" id="PortfolioTitle">PORTFOLIO</h1>
-            </div>
-            
-            <div class="Wrap" id="PortfolioPopupWrap"> 
-                <div id="PortfolioPopup" class="Popup">
-                    <div class="PopupContent">
-                        <button id="PopupCloseButton" onclick="closePopup()">CLOSE</button>
-                        <div class="PopupTitleDatesContainer">
-                            <h1 id="ProjectTitle">ProjectTitle</h1>
-                            <h2 id="ProjectDates">ProjectDates</h2>
+            <div class="technical-skills-container">
+                <div class="skill-bars-container">
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-0">
+                            <h1 id=skill-name-0></h1>
+                            <script>
+                                getRatingBarData(0,.80,"Swift");
+                            </script>
                         </div>
-                        <div class="PopupImageSummaryContainer">
-                            <div class="HalfContainer">
-                                <img id="ProjectImage" src="images/linkedin.png">
-                            </div>
-                            <div class="HalfContainer">
-                                <p id="ProjectSummary">ProjectSummary</p>
-                            </div>
-                            
-                            
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-1">
+                            <h1 id=skill-name-1></h1>
+                            <script>
+                                getRatingBarData(1,.80,"Python");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-2">
+                            <h1 id=skill-name-2></h1>
+                            <script>
+                                getRatingBarData(2,.75,"C++");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-3">
+                            <h1 id=skill-name-3></h1>
+                            <script>
+                                getRatingBarData(3,.5,"HTML");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-4">
+                            <h1 id=skill-name-4></h1>
+                            <script>
+                                getRatingBarData(4,.5,"CSS");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-5">
+                            <h1 id=skill-name-5></h1>
+                            <script>
+                                getRatingBarData(5,.5,"Javascript");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-6">
+                            <h1 id=skill-name-6></h1>
+                            <script>
+                                getRatingBarData(6,.3,"Unity");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-7">
+                            <h1 id=skill-name-7></h1>
+                            <script>
+                                getRatingBarData(7,.3,"C#");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-8">
+                            <h1 id=skill-name-8></h1>
+                            <script>
+                                getRatingBarData(8,.25,"Java");
+                            </script>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="rating-bar" id="rating-bar-9">
+                            <h1 id=skill-name-9></h1>
+                            <script>
+                                getRatingBarData(9,.6,"Firebase");
+                            </script>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="GridContainer" id="PortfolioGrid">
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(0)"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(1)"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(2)"></a></div>
-                <div class="GridItemContainer"><a href="#" class="GridItemContents"><img src="images/linkedin.png" onclick="openPopup(3)"></a></div>
-            </div>
+            </div>            
         </div>
-    </section>
-
-    <!--***************************
-    *Contact Me section
-    ****************************-->
-    <a class="Anchor" name="ContactMeAnchor"></a>
-    <section class="Section" id="ContactMe" style="background-image: url(images/BG_UPSIDEDOWN.png)">
-        <div class="Wrap" id="ContactMeWrap">
-            <div class="TitleBox" id="ContactMeTitleBox">
-                <h1 class="SectionTitle" id="ContactMeTitle">CONTACT ME</h1>
-            </div>
-            <div class="EmailMeContainer">
-                 <form>
-                    <div class="DivWith2OverlappingElements" id="UserEmailTextFieldWithHeaderBox">
-                        <input type="text" name="firstname" id="UserEmailTextField" onclick="clearUserEmailTextField()">
-                        <script>
-                            //Set up the UI for the textField to indicate the user should enter their email
-                            var userEmailTextFieldDOM = document.getElementById("UserEmailTextField");
-                            userEmailTextFieldDOM.value = "Your Email Address:";
-                            userEmailTextFieldDOM.style.color = "#848487";
-                        </script>
-                    </div>
-                    <textarea rows="4" cols="50" style="resize: none;" id="UserTextBody" onclick="clearUserTextBody()"></textarea>
-                    <script>
-                        var userTextBodyDOM = document.getElementById("UserTextBody");
-                        userTextBodyDOM.value = "Your Email Body:"
-                        userTextBodyDOM.style.color = "#848487";
-                    </script>
-                </form> 
-                <button class="sendButton" onclick="sendEmail()">SEND</button>         
-            </div>      
+        <div class="portfolio" id="portfolio-animation-waypoint">
+            <link rel="stylesheet" type="text/css" href="portfolio-section/portfolio.css">
+            <script type="text/javascript" src="portfolio-section/portfolio-data-objects.js"></script>
+            <script type="text/javascript" src="portfolio-section/portfolio.js"></script>
         </div>
-    </section>
-    <!--***************************
-    *Nav Bar
-    ****************************-->
-    <nav class="NavBar" id="NavBarDiv" onmouseover="extendNavBar()" onmouseout="closeNavBar()">     
-            <img src="images/BARS.png" id="NavBarButton" >
-            <ul class="NavBarList">
-                <a href="#AboutMeAnchor" class="NavBarLink">ABOUT ME</a>
-                <a href="#SkillsAnchor" class="NavBarLink" onclick="activateSkillBarAnimation();">SKILLS</a>
-                <a href="#PortfolioAnchor" class="NavBarLink">PORTFOLIO</a>
-                <a href="#ContactMeAnchor" class="NavBarLink">CONTACT ME</a>
-            </ul>  
-
-    </nav>
 </body>
 </html>
