@@ -63,130 +63,165 @@
                         openBanner();
                     }
                 },
+                offset: 300
             })
         </script>
-            <div class="about-me-buffer-container"></div>
-            <div class="about-me-paragraph-box">
-                <p>
-                   I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
-                   <br>
-                   <br>
-                   Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
-                </p>
-            </div>  
-            <div class="self-portrait-banner"></div>
-        </div>
-        <div class="skills" id="about-me-animation-waypoint">
-            <link rel="stylesheet" type="text/css" href="skills-section/skills.css">
-            <script type="text/javascript" src="skills-section/skills.js"></script>
-            <script>
-                var waypoint = new Waypoint({
-                    element: document.getElementById("about-me-animation-waypoint"),
-                    handler: function(direction) {
-                        if (direction =="up"){
-                            openBanner();
-                        }
-                        else{
-                            fillAllRatingBars();
-                        }
-                    },
-                })
-            </script>
-            <div class= "soft-skills-container">
-                <div class= "soft-skills-images-container">
-                    
-                </div>
-                
+        <div class="about-me-buffer-container"></div>
+        <div class="about-me-paragraph-box">
+            <p>
+               I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
+               <br>
+               <br>
+               Take a look down below for a sneak peak of my various skills and projects. Also, you can use the contact me section on the bottom to get in touch with me on linkedIn, through my email, or a phone call. Lastly, you may preview and download my resume in the contact me section as well.
+            </p>
+        </div>  
+        <div class="self-portrait-banner"></div>
+    </div>
+    <div class="skills" id="about-me-animation-waypoint">
+        <link rel="stylesheet" type="text/css" href="skills-section/skills.css">
+        <script type="text/javascript" src="skills-section/skills.js"></script>
+        <script>
+            var waypoint = new Waypoint({
+                element: document.getElementById("about-me-animation-waypoint"),
+                handler: function(direction) {
+                    if (direction =="up"){
+                        openBanner();
+                    }
+                    else{
+                        fillAllRatingBars();
+                    }
+                },
+                offset: 300
+            })
+        </script>
+        <div class= "soft-skills-container">
+            <div class= "soft-skills-images-container">
+
             </div>
-            <div class="technical-skills-container">
-                <div class="skill-bars-container">
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-0">
-                            <h1 id=skill-name-0></h1>
-                            <script>
-                                getRatingBarData(0,.80,"Swift");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-1">
-                            <h1 id=skill-name-1></h1>
-                            <script>
-                                getRatingBarData(1,.80,"Python");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-2">
-                            <h1 id=skill-name-2></h1>
-                            <script>
-                                getRatingBarData(2,.75,"C++");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-3">
-                            <h1 id=skill-name-3></h1>
-                            <script>
-                                getRatingBarData(3,.5,"HTML");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-4">
-                            <h1 id=skill-name-4></h1>
-                            <script>
-                                getRatingBarData(4,.5,"CSS");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-5">
-                            <h1 id=skill-name-5></h1>
-                            <script>
-                                getRatingBarData(5,.5,"Javascript");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-6">
-                            <h1 id=skill-name-6></h1>
-                            <script>
-                                getRatingBarData(6,.3,"Unity");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-7">
-                            <h1 id=skill-name-7></h1>
-                            <script>
-                                getRatingBarData(7,.3,"C#");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-8">
-                            <h1 id=skill-name-8></h1>
-                            <script>
-                                getRatingBarData(8,.25,"Java");
-                            </script>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="rating-bar" id="rating-bar-9">
-                            <h1 id=skill-name-9></h1>
-                            <script>
-                                getRatingBarData(9,.6,"Firebase");
-                            </script>
-                        </div>
+
+        </div>
+        <div class="technical-skills-container">
+            <div class="skill-bars-container">
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-0">
+                        <h1 id=skill-name-0></h1>
+                        <script>
+                            getRatingBarData(0,.80,"Swift");
+                        </script>
                     </div>
                 </div>
-            </div>            
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-1">
+                        <h1 id=skill-name-1></h1>
+                        <script>
+                            getRatingBarData(1,.80,"Python");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-2">
+                        <h1 id=skill-name-2></h1>
+                        <script>
+                            getRatingBarData(2,.75,"C++");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-3">
+                        <h1 id=skill-name-3></h1>
+                        <script>
+                            getRatingBarData(3,.5,"HTML");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-4">
+                        <h1 id=skill-name-4></h1>
+                        <script>
+                            getRatingBarData(4,.5,"CSS");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-5">
+                        <h1 id=skill-name-5></h1>
+                        <script>
+                            getRatingBarData(5,.5,"Javascript");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-6">
+                        <h1 id=skill-name-6></h1>
+                        <script>
+                            getRatingBarData(6,.3,"Unity");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-7">
+                        <h1 id=skill-name-7></h1>
+                        <script>
+                            getRatingBarData(7,.3,"C#");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-8">
+                        <h1 id=skill-name-8></h1>
+                        <script>
+                            getRatingBarData(8,.25,"Java");
+                        </script>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="rating-bar" id="rating-bar-9">
+                        <h1 id=skill-name-9></h1>
+                        <script>
+                            getRatingBarData(9,.6,"Firebase");
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>
+    <div class="portfolio" id="portfolio-animation-waypoint">
+        <link rel="stylesheet" type="text/css" href="portfolio-section/portfolio.css">
+        <script type="text/javascript" src="portfolio-section/portfolio-data-objects.js"></script>
+        <script type="text/javascript" src="portfolio-section/portfolio.js"></script>
+        <script>
+            var waypoint = new Waypoint({
+                element: document.getElementById("portfolio-animation-waypoint"),
+                handler: function(direction) {
+                    if (direction =="up"){
+
+                    }
+                    else{
+                        animateGridCells()
+                    }
+                }, 
+                offset: 300
+            })
+        </script>
+        <div class="popup-container">
+            <button onclick="closePopup();">close</button>
+            <h1 class="popup-title"></h1>
+            <p class="popup-summary"></p>
         </div>
-        <div class="portfolio" id="portfolio-animation-waypoint">
-            <link rel="stylesheet" type="text/css" href="portfolio-section/portfolio.css">
-            <script type="text/javascript" src="portfolio-section/portfolio-data-objects.js"></script>
-            <script type="text/javascript" src="portfolio-section/portfolio.js"></script>
-        </div>
+        <div class=grid-container>
+            <div class="grid-cell" id="grid-cell-0" onclick="openPopup(0);">
+                <a href="#"></a>
+            </div>
+            <div class="grid-cell" id="grid-cell-1" onclick="openPopup(1);">
+                <a href="#"></a>
+            </div>
+            <div class="grid-cell" id="grid-cell-2" onclick="openPopup(2);">
+                <a href="#"></a>
+            </div>
+            <div class="grid-cell" id="grid-cell-3" onclick="openPopup(3);">
+                <a href="#"></a>
+            </div>
+        </div>     
+    </div>
 </body>
 </html>
