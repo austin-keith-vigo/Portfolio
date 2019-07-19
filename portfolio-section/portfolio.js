@@ -33,31 +33,12 @@ function animateGridCells(){
 function openPopup(index){
     //Set the popup attributes
     setPopupAttributes(index);
-    
-    //change the background
-//    $portfolioSection = $(".portfolio");
-//    $portfolioSection.css("background-color", "rgba(0,0,0,0.6)");
-    
-    //change the display properties
-    for(gridCellIndex = 0; gridCellIndex < dataObjects.length; gridCellIndex++){
-        $gridCell = $("#grid-cell-" + gridCellIndex.toString());
-        $gridCell.css("display","none");
-    }
     $popupContainer = $(".popup-container");
     $popupContainer.css("display", "block");
     
 }
 
 function closePopup(){
-    //change the background
-    $portfolioSection = $(".portfolio");
-    $portfolioSection.css("background-color", "rgba(0,0,0,0)");
-    
-    //change the display properties
-        for(gridCellIndex = 0; gridCellIndex < dataObjects.length; gridCellIndex++){
-        $gridCell = $("#grid-cell-" + gridCellIndex.toString());
-        $gridCell.css("display","inline");
-    }
     $popupContainer = $(".popup-container");
     $popupContainer.css("display", "none");
 }
