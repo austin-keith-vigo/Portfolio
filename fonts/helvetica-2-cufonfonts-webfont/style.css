@@ -54,3 +54,7 @@ font-style: normal;
 font-weight: normal;
 src: local('Helvetica Light'), url('helvetica-light-587ebe5a59211.woff') format('woff');
 }
+.section-title {
+    font-family: "Josefin Sans";
+    font-size: 45px;
+}
