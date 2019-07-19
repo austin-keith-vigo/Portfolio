@@ -1,5 +1,5 @@
 .about-me{
-    height: 100vh;
+    height: 500px;
     width: 100vw;
     position: relative;
 }
@@ -23,7 +23,7 @@
     height: auto;
     margin: 40px;
     
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Josefin sans";
     line-height: 30px;
 }
@@ -37,4 +37,14 @@
     position: absolute;
     top: 0%;
     left: 0%;
+}
+
+.self-portrait{
+    height:100%;
+    width: auto;
+    position: absolute;
+    margin-top: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
