@@ -2,9 +2,18 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!--Email api setup-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_kvvHWNGssO4BwyyV8qWFe");
+       })();
+    </script>
+    
+    <!--jquery-->
     <script type="text/javascript" src="external-js-files/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="external-js-files/jquery.waypoints.js"></script>
-    
 </head>
 <body>
     <header class="title">
@@ -224,7 +233,13 @@
         </div>     
     </div>
     <div class="contact-me" id="contact-me-animation-waypoint">
-        
+        <link rel="stylesheet" type="text/css" href="contact-me-section/contact-me.css">
+        <script type="text/javascript" src="contact-me-section/contact-me.js"></script>
+        <div class="text-fields-container">
+            <input type="text" class="user-email-text-field" id=contact-me-input onclick="activateUserEmailTextField();" value="Enter the email I should use to respond to your email:">
+            <textarea rows="10" cols="30" class="email-body-text-field" id="contact-me-textarea" onclick="activateEmailBodyTextField();">Enter the email body:</textarea>
+            <button onclick="sendEmail();" class="send-button">send</button>            
+        </div>
     </div>
 </body>
 </html>

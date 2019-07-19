@@ -35,8 +35,8 @@ function openPopup(index){
     setPopupAttributes(index);
     
     //change the background
-    $portfolioSection = $(".portfolio");
-    $portfolioSection.css("background-color", "rgba(0,0,0,0.6)");
+//    $portfolioSection = $(".portfolio");
+//    $portfolioSection.css("background-color", "rgba(0,0,0,0.6)");
     
     //change the display properties
     for(gridCellIndex = 0; gridCellIndex < dataObjects.length; gridCellIndex++){
