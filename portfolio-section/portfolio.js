@@ -37,24 +37,30 @@ function openPopup(index){
     //Set the popup attributes
     setPopupAttributes(index);
     $popupContainer = $(".popup-container");
-    $popupContainer.css("display", "block");
+//    $popupContainer.css("display", "block");
+    $popupContainer.animate({
+        top: "0px"
+    },{
+        duration: 200
+    })
     
     //disable scroll
-    $('html, body').css({
-        overflow: 'hidden',
-        height: '100%'
-    });
+//    $('html, body').css({
+//        overflow: 'hidden',
+//        height: '100%'
+//    });
 
 }
 
 function closePopup(){
     $popupContainer = $(".popup-container");
-    $popupContainer.css("display", "none");
+//    $popupContainer.css("display", "none");
+    $popupContainer.css("top", "-1000px");
     
     //enable scroll
-    $('html, body').css({
-        overflow: 'auto',
-        height: 'auto'
-    });
+//    $('html, body').css({
+//        overflow: 'auto',
+//        height: 'auto'
+//    });
 
 }
