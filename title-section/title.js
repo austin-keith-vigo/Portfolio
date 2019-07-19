@@ -12,7 +12,7 @@ class Bar {
 //Array of bars for each side of the title
 //The right bars are mirrored to the left bars
 var bars = []
-var colors = ["#8BB990", "#8BB990", "#8BB990", "#8BB990", "red", "blue"];
+var colors = ["#8BB990", "#8BB990", "#8BB990", "#8BB990", "#BB6857", "#D4B155"];
 
 function getBarsData(){
     var numOfBars = 12;

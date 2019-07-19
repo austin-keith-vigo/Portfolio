@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -75,7 +76,9 @@
                 offset: 300
             })
         </script>
-        <div class="about-me-buffer-container"></div>
+        <div class="about-me-buffer-container">
+
+        </div>
         <div class="about-me-paragraph-box">
             <p>
                I am currently a Computer Science major at University of California, Irvine. Though I am still a student, I have extensive knowledge on good programming principles and I have put them into good practice. Aside from the technical skills, I have refined my soft skills from my experiences in working on team projects. These skills gives way to my ability to excel in any role that is required of me. 
@@ -212,11 +215,6 @@
                 offset: 300
             })
         </script>
-        <div class="popup-container">
-            <button onclick="closePopup();">close</button>
-            <h1 class="popup-title"></h1>
-            <p class="popup-summary"></p>
-        </div>
         <div class=grid-container>
             <div class="grid-cell" id="grid-cell-0" onclick="openPopup(0);">
                 <a href="#"></a>
@@ -230,7 +228,22 @@
             <div class="grid-cell" id="grid-cell-3" onclick="openPopup(3);">
                 <a href="#"></a>
             </div>
-        </div>     
+        </div>   
+        <div class="popup-container">
+            <div class="popup-contents-container">
+                <button onclick="closePopup();">close</button>
+                <h1 class="popup-title"></h1>
+                <div class="image-summary-container">
+                    <div class=popup-image-container>
+                        <img class="popup-image" src="portfolio-section/images/Screenshots/2DPlatformerScreenshots/">
+                    </div>
+
+                    <p class="popup-summary"></p>                  
+                </div>
+
+            </div>
+
+        </div>  
     </div>
     <div class="contact-me" id="contact-me-animation-waypoint">
         <link rel="stylesheet" type="text/css" href="contact-me-section/contact-me.css">
