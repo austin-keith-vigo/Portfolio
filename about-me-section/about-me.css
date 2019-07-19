@@ -32,14 +32,9 @@
     height: 100%;
     width: 100%;
     
-/*    background-color: black;*/
+    background-color: black;
     
     position: absolute;
     top: 0%;
     left: 0%;
-}
-
-.self-portraight{
-    width: 100%;
-    height: auto;
 }
