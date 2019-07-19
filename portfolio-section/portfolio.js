@@ -1,8 +1,8 @@
 class Popup{
-    constructor(title, projectSummary, imagePath){
+    constructor(title, projectSummary, imageFilepaths){
         this.title = title;
         this.projectSummary = projectSummary;
-        this.imagePath = imagePath;
+        this.imageFilepaths = imageFilepaths;
     }
 }
 
@@ -12,12 +12,15 @@ function setPopupAttributes(index){
 
     popup.title = dataObjects[index].title;
     popup.projectSummary = dataObjects[index].projectSummary;
+    //Sets it to the first image
+    popup.imageFilepaths = dataObjects[index].imageFilepaths[0];
     
     $popupTitle = $(".popup-title");
     $popupTitle.text(popup.title);
     $popupSummary = $(".popup-summary");
     $popupSummary.text(popup.projectSummary);
-    console.log(popup.projectSummary);
+    $popupImage = $(".popup-image");
+    $popupImage.attr("src", popup.imageFilepaths);
 
 }
 
@@ -36,9 +39,22 @@ function openPopup(index){
     $popupContainer = $(".popup-container");
     $popupContainer.css("display", "block");
     
+    //disable scroll
+    $('html, body').css({
+        overflow: 'hidden',
+        height: '100%'
+    });
+
 }
 
 function closePopup(){
     $popupContainer = $(".popup-container");
     $popupContainer.css("display", "none");
+    
+    //enable scroll
+    $('html, body').css({
+        overflow: 'auto',
+        height: 'auto'
+    });
+
 }
