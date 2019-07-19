@@ -43,12 +43,7 @@ function openPopup(index){
     },{
         duration: 200
     })
-    
-    //disable scroll
-//    $('html, body').css({
-//        overflow: 'hidden',
-//        height: '100%'
-//    });
+
 
 }
 
@@ -58,9 +53,6 @@ function closePopup(){
     $popupContainer.css("top", "-1000px");
     
     //enable scroll
-//    $('html, body').css({
-//        overflow: 'auto',
-//        height: 'auto'
-//    });
+
 
 }

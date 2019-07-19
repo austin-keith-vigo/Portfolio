@@ -10,13 +10,15 @@
     
     border-style:solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #D4B155;
     border-radius: 5px;
     background-color: antiquewhite;
     font-family: "Josefin Sans";
     font-size: 18px;
     padding-left: 5px;
     padding-top: 5px;
+    
+    margin-bottom: 20px;
 }
 
 .email-body-text-field {
@@ -30,7 +32,7 @@
     
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: #D4B155;
     border-radius: 5px;    
     background-color: antiquewhite;
     font-family: "Josefin Sans";
@@ -43,4 +45,25 @@
 .send-button {
     display: block;
     margin: auto;
+    width: 100px;
+    height: auto;
+    font-family: "Josefin Sans";
+    font-size: 25px;
+    background-color: #BB6857;
+    border-radius:5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 2px;
+}
+
+.reference-link-container {
+    text-align:center;
+}
+.reference-button-link img{
+    height: 50px;
+    width: auto;
+    display: inline-block;
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
