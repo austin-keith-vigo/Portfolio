@@ -17,34 +17,34 @@ function sendEmail(){
     emailjs.send(service_id, template_id, template_params);
 }
 
-function activateUserEmailTextField(){
-    var $userEmail = $(".user-email-text-field");
-    clearUserEmailTextField();
-    $userEmail.css("border-color","black", "border-style", "solid", "border-width", "1px");
-}
-
-function activateEmailBodyTextField(){
-    var $emailBody = $(".email-body-text-field");
-    $emailBody.val("");
-    $emailBody.css("border-color","black", "border-style", "solid", "border-width", "5px");
-}
-
+//function activateUserEmailTextField(){
+//    var $userEmail = $(".user-email-text-field");
+//    clearUserEmailTextField();
+//    $userEmail.css("border-color","black", "border-style", "solid", "border-width", "1px");
+//}
+//
+//function activateEmailBodyTextField(){
+//    var $emailBody = $(".email-body-text-field");
+//    $emailBody.val("");
+//    $emailBody.css("border-color","black", "border-style", "solid", "border-width", "5px");
+//}
+//
 function resetUserEmailTextField(){
     var $userEmail = $(".user-email-text-field");
-    $userEmail.val("Enter the email I should use to respond to your email: ")
+    $userEmail.val("")
 }
 
 function resetEmailBodyTextField(){
     var $emailBody = $(".email-body-text-field");
-    $emailBody.val("Enter the email body: ");
-}
-
-function clearUserEmailTextField(){
-    var $userEmail = $(".user-email-text-field");
-    $userEmail.val("");
-}
-
-function clearEmailBodyTextField(){
-    var $emailBody = $(".email-body-text-field");
     $emailBody.val("");
 }
+//
+//function clearUserEmailTextField(){
+//    var $userEmail = $(".user-email-text-field");
+//    $userEmail.val("");
+//}
+//
+//function clearEmailBodyTextField(){
+//    var $emailBody = $(".email-body-text-field");
+//    $emailBody.val("");
+//}

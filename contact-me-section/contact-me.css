@@ -1,6 +1,5 @@
 
 .contact-me {
-    background-color: antiquewhite;
 }
 
 .user-email-text-field {
@@ -8,12 +7,16 @@
     margin: auto;
     width: 800px;
     height: 25px;
-}
-
-.user-email-text-field:active{
+    
+    border-style:solid;
+    border-width: 2px;
     border-color: black;
-    border-style: solid;
-    border-width: 5px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .email-body-text-field {
@@ -25,6 +28,16 @@
     
     resize: none;
     
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;    
+    background-color: antiquewhite;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+    
+    padding: 5px;
+ 
 }
 
 .send-button {
