@@ -1,5 +1,8 @@
 
 .contact-me {
+    background-image: url(images/BG_UPSIDEDOWN.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .user-email-text-field {
@@ -65,4 +68,5 @@
     display: inline-block;
     
     margin-top: 50px;
+    margin-bottom: 50px;
 }

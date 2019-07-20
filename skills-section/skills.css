@@ -6,7 +6,7 @@
 .soft-skills-container{
     width: 50%;
     height: 100%;
-    background-color: blueviolet;
+/*    background-color: blueviolet;*/
     float: left;
     position: relative;
 }
@@ -26,13 +26,16 @@
 }
 
 .soft-skills-images-container {
-    background-color: aquamarine;
+/*    background-color: aquamarine;*/
     width: 500px;
     height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-width: 3px;
+    border-style: solid;
+    border-color: #BB6857;
 }
 
 .skill-bar {
