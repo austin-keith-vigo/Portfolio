@@ -10,13 +10,29 @@ var ratingBars = [];
 
 function getRatingBarData(index, percentage, skillName){
     var rating = 400 * percentage;
-    var newRatingBar = new RatingBar(rating, "#8BB990", skillName);
+    var color;
+    if(index == 0){
+        color = "#8BB990";
+    } 
+    else{
+        if (ratingBars[index - 1].color == "#8BB990") {
+            color = "#BB6857";
+        } 
+        else if(ratingBars[index - 1].color == "#D4B155") {
+            color = "#8BB990";
+        }
+        else{
+            color = "#D4B155";
+        }
+    }
+    var newRatingBar = new RatingBar(rating, color, skillName);
+    $ratingBar = $("#rating-bar-" + index.toString());
+    $ratingBar.css("background-color",color);
     ratingBars.push(newRatingBar);
 }
 
 function fillRatingBar(index){
     $ratingBar = $("#rating-bar-" + index.toString());
-//    $ratingBar.css("width",ratingBars[index].width.toString() + "px");
     $ratingBar.animate({
         width: ratingBars[index].width.toString() + "px"
     }, 1000, function(){
