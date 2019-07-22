@@ -3,6 +3,7 @@ class Popup{
         this.title = title;
         this.projectSummary = projectSummary;
         this.imageFilepaths = imageFilepaths;
+        this.currentImageIndex = 0;
     }
 }
 
@@ -13,14 +14,14 @@ function setPopupAttributes(index){
     popup.title = dataObjects[index].title;
     popup.projectSummary = dataObjects[index].projectSummary;
     //Sets it to the first image
-    popup.imageFilepaths = dataObjects[index].imageFilepaths[0];
+    popup.imageFilepaths = dataObjects[index].imageFilepaths;
     
     $popupTitle = $(".popup-title");
     $popupTitle.text(popup.title);
     $popupSummary = $(".popup-summary");
     $popupSummary.html(popup.projectSummary);
     $popupImage = $(".popup-image");
-    $popupImage.attr("src", popup.imageFilepaths);
+    $popupImage.attr("src", popup.imageFilepaths[popup.currentImageIndex]);
 
 }
 
@@ -57,11 +58,25 @@ function closePopup(){
 }
 
 function nextImage(){
-    console.log("next");
+    popup.currentImageIndex = popup.currentImageIndex + 1;
+    
+    if(popup.currentImageIndex == popup.imageFilepaths.length){
+        console.log("reset");
+        popup.currentImageIndex = 0;
+    }
+    
     $popupImage = $(".popup-image");
+    $popupImage.attr("src", popup.imageFilepaths[popup.currentImageIndex]);
+    
 }
 
 function previousImage(){
-    console.log("previous");
+    popup.currentImageIndex = popup.currentImageIndex - 1;
+    
+    if(popup.currentImageIndex < 0){
+        popup.currentImageIndex = popup.imageFilepaths.length - 1;
+    }
+    
     $popupImage = $(".popup-image");
+    $popupImage.attr("src", popup.imageFilepaths[popup.currentImageIndex]);
 }

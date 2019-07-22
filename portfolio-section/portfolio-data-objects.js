@@ -18,7 +18,7 @@ let personalWebsiteData = {
     date: "July 2019 - Current",
     projectSummary: 
     "During the summer of 2019 I set out to learn new skills. My curiousity for other fields of computer science motivated me to learn web-development. I started off learning javascript through a Udemy Course. After completing that course, I completed the CSS and HTML Udemy course taught by the same instructor. These two courses taught me the basics of how to develop a website.<br><br>As I started developing I quickly realized that I did not know everything I needed to know to completely build a website from scratch. However, it did not stop me from moving forward as you can see. Using my resourcefulness I sought help from my greatest resource available to me, Google. Whenever I wanted to implement a feature and did not know where to start, I googled it and after many videos and stack overflow posts I was able to achieve many things the courses did not teach me. For instance, I wanted to animate my name banner with the vertical lines coming down that loads in when the page first loads. After a long time researching I came to the conclusion of using JQuery and .animate function to achieve this. This website is a testament to my resourcefullness and self-motivation.",
-    imageFilepaths:[]
+    imageFilepaths:["portfolio-section/images/Screenshots/PersonalWebsiteScreenshots/SCREENSHOT-1.png", "portfolio-section/images/Screenshots/PersonalWebsiteScreenshots/SCREENSHOT-2.png","portfolio-section/images/Screenshots/PersonalWebsiteScreenshots/SCREENSHOT-3.png"]
 };
 
 let vgdcGameData = {
