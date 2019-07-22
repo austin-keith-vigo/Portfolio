@@ -71,6 +71,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }
 
 .popup-summary-container{
@@ -113,3 +116,26 @@
 }
 
 
+
+.previous-image-button {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-image-button {
+    height: 20px;
+    width: 20px;
+    background-color: aqua;
+    
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    top: 50%;
+}

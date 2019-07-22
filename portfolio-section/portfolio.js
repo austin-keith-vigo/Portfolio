@@ -18,7 +18,7 @@ function setPopupAttributes(index){
     $popupTitle = $(".popup-title");
     $popupTitle.text(popup.title);
     $popupSummary = $(".popup-summary");
-    $popupSummary.text(popup.projectSummary);
+    $popupSummary.html(popup.projectSummary);
     $popupImage = $(".popup-image");
     $popupImage.attr("src", popup.imageFilepaths);
 
@@ -54,5 +54,14 @@ function closePopup(){
     
     //enable scroll
 
+}
 
+function nextImage(){
+    console.log("next");
+    $popupImage = $(".popup-image");
+}
+
+function previousImage(){
+    console.log("previous");
+    $popupImage = $(".popup-image");
 }
