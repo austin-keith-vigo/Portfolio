@@ -61,20 +61,24 @@
     height: 100%;
     width: 50%;
     float: left;
+    position: relative;
 }
 
 .popup-image{
-    height: auto;
-    width: auto;
-    height: 80%;
-    width: auto;
+    max-height: 80%;
+    max-width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.popup-summary {
-    height: 100%;
+.popup-summary-container{
     width: 50%;
     float: left;
-    
+    position: relative;
+}
+.popup-summary {
     text-align: left;
     padding: 20px;
     
@@ -83,6 +87,27 @@
 
 .popup-title {
     font-family: "Josefin Sans";
+    font-size: 50px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.close-button{
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: white;
+    background-image: url(images/close-button.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.close-button:hover{
+    background-image: url(images/close-button-hover.png);
 }
 
 
