@@ -123,6 +123,7 @@
     background-image: url(images/previous-image-button.png);
     background-size: cover;
     background-position: center;
+    background-color: rgba(0, 0, 0, 0);
     border-style: none;
     border-radius: 20px;
     
@@ -145,6 +146,7 @@
     background-image: url(images/next-image-button.png);
     background-size: cover;
     background-position: center;
+    background-color: rgba(0, 0, 0, 0);
     border-style: none;
     border-style: none;
     border-radius: 20px;
