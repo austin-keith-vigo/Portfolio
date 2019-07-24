@@ -16,12 +16,10 @@
     height: 100%;
     width: 50%;
     float: left;
-    background-color:aqua;
 }
 
 .about-me-paragraph-box p{
     margin: 40px;
-    background-color:aquamarine;
     
     font-size: 2vw;
     font-family: "Josefin sans";
