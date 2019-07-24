@@ -1,5 +1,5 @@
 .about-me{
-    height: 500px;
+    height: 100vh;
     width: 100vw;
     position: relative;
 }
@@ -16,16 +16,16 @@
     height: 100%;
     width: 50%;
     float: left;
+    background-color:aqua;
 }
 
 .about-me-paragraph-box p{
-    width: 500px;
-    height: auto;
     margin: 40px;
+    background-color:aquamarine;
     
-    font-size: 20px;
+    font-size: 2vw;
     font-family: "Josefin sans";
-    line-height: 30px;
+    line-height: 5vh;
 }
 
 .self-portrait-banner{
