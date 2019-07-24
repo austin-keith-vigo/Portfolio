@@ -1,12 +1,11 @@
 .skills{
-    height: 700px;
+    height: 100vh;
     width: 100vw;
 }
 
 .soft-skills-container{
     width: 50%;
     height: 100%;
-/*    background-color: blueviolet;*/
     float: left;
     position: relative;
 }
@@ -26,7 +25,6 @@
 }
 
 .soft-skills-images-container {
-/*    background-color: aquamarine;*/
     width: 500px;
     height: 500px;
     position: absolute;
@@ -51,7 +49,6 @@
 .rating-bar {
     height: 35px;
     width: 0px;
-/*    background-color: #8BB990;*/
     margin-left: 4px;
 }
 
