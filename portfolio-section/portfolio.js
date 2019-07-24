@@ -7,7 +7,7 @@ class Popup{
     }
 }
 
-var popup = new Popup("","","");
+var popup = new Popup(vusarData.title,vusarData.projectSummary,vusarData.imageFilepaths);
 
 function setPopupAttributes(index){
 
