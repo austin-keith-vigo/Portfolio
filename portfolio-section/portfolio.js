@@ -51,7 +51,7 @@ function openPopup(index){
 function closePopup(){
     $popupContainer = $(".popup-container");
 //    $popupContainer.css("display", "none");
-    $popupContainer.css("top", "-1000px");
+    $popupContainer.css("top", "-2000px");
     
     //enable scroll
 
