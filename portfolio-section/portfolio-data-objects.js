@@ -15,7 +15,7 @@ let redAppleData = {
 
 let personalWebsiteData = {
     title: "Personal Website",
-    date: "July 2019 - Current",
+    date: "July 2019 - August 2019",
     projectSummary: 
     "During the summer of 2019 I set out to learn new skills. My curiousity for other fields of computer science motivated me to learn web-development. I started off learning javascript through a Udemy Course. After completing that course, I completed the CSS and HTML Udemy course taught by the same instructor. These two courses taught me the basics of how to develop a website.<br><br>As I started developing I quickly realized that I did not know everything I needed to know to completely build a website from scratch. However, it did not stop me from moving forward as you can see. Using my resourcefulness I sought help from my greatest resource available to me, Google. Whenever I wanted to implement a feature and did not know where to start, I googled it and after many videos and stack overflow posts I was able to achieve many things the courses did not teach me. For instance, I wanted to animate my name banner with the vertical lines coming down that loads in when the page first loads. After a long time researching I came to the conclusion of using JQuery and .animate function to achieve this. This website is a testament to my resourcefullness and self-motivation.",
     imageFilepaths:["portfolio-section/images/Screenshots/PersonalWebsiteScreenshots/SCREENSHOT-1.png", "portfolio-section/images/Screenshots/PersonalWebsiteScreenshots/SCREENSHOT-2.png","portfolio-section/images/Screenshots/PersonalWebsiteScreenshots/SCREENSHOT-3.png"]
@@ -28,4 +28,12 @@ let vgdcGameData = {
     "This was my first project I commited extra-curricular time to completing. Along, with 5 other programmers, we completed a 2D-Platformer using the Unity Engine.<br><br>Heading into this project I knew nothing about game-development and Unity, and I was not the only one. We were all beginners. I was voted to be the leader of the group, which as time passed grew to be a more difficult task. I was the one to lead the group in the learning stage where we all taught ourselves Unity. Along with this responsibility, I delegated out features and made sure these features were finished on time. If not, I would flex team-members to alleviate the blocker. It felt like an Agile Software Development process, but I did not know this at the time. Lastly, I managed the GitHub repo, resolving merge conflicts and approving pull requests.<br><br>As stated before, being that we were all beginners, it was difficult to learn and implement new things at the same time. But seeing the finished product and letting other people play it, made our success all that much more satisfying. This project really made me flex my leadership and communication skills, and it was a great learning opportunity for me to improve in these areas.",
     imageFilepaths:["portfolio-section/images/Screenshots/2DPlatformerScreenshots/Screenshot1.png","portfolio-section/images/Screenshots/2DPlatformerScreenshots/Screenshot2.png"]
 };
-let dataObjects = [vusarData, redAppleData, personalWebsiteData, vgdcGameData];
+
+let recordsAppData = {
+    title: "Records Application",
+    data: "August 2019 - October 2019",
+    projectSummary:
+    "Having started learning mobile development with my two internships I learned about the power of React-Native through a connection. This intrigued me so I sought to learn it by creating this app. A brief summary of the app: it keeps track of how much your friends owe each other.<br><br>Learning React-Native was easy as I had brief exposure to javascript while creating my website. I started a udemy course on React-Native to learn the basics and get started on the app. But, my greatest learning tool was google. For instance, when I wanted to implement authentication to the app, I followed a youtube tutorial.<br><br>This project stood out to me as a major accomplishment because it was the first time I completed an app on my own.",
+    imageFilepaths:["portfolio-section/images/Screenshots/RecordsScreenshots/records_s1.png","portfolio-section/images/Screenshots/RecordsScreenshots/records_s2.png","portfolio-section/images/Screenshots/RecordsScreenshots/records_s3.png"]
+};
+let dataObjects = [vusarData, redAppleData, personalWebsiteData, vgdcGameData, recordsAppData];
